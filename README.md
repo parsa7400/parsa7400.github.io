@@ -1,332 +1,389 @@
 
-<!-- ================================================== -->
-<!-- PARSA7400 | DEVELOPER CENTER -->
-<!-- Premium GitHub Repository README -->
-<!-- ================================================== -->
+<!-- ============================================================ -->
+<!-- PARSA7400 | PREMIUM DEVELOPER CENTER -->
+<!-- GitHub Repository Profile | English Edition -->
+<!-- ============================================================ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:080A10,45:172B4D,100:00F5D4&text=PARSA7400&fontSize=58&fontColor=FFFFFF&fontAlignY=38&desc=DEVELOPER%20CENTER%20%7C%20BUILD.%20CREATE.%20INNOVATE.&descAlignY=60&descSize=15&animation=fadeIn" width="100%">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:050816,25:101B35,55:263B68,80:087F8C,100:00F5D4&text=PARSA7400&fontSize=68&fontColor=FFFFFF&fontAlignY=38&desc=SOFTWARE%20DEVELOPER%20%2F%20WEB%20ENGINEER&descSize=17&descAlignY=59&animation=fadeIn&stroke=00F5D4&strokeWidth=1"/>
 
 <br>
 
-<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/git.gif" width="65">
-&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="55">
-&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Dev.gif" width="65">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=3000&pause=900&color=00F5D4&center=true&vCenter=true&repeat=true&width=850&height=65&lines=ENGINEERING+DIGITAL+EXPERIENCES;BUILDING+INTELLIGENT+WEB+SYSTEMS;DEVELOPING+AUTOMATION+AND+APIs;TURNING+IDEAS+INTO+REAL+SOFTWARE;ALWAYS+BUILDING.+ALWAYS+IMPROVING." alt="Developer Introduction"/>
 
-<h1>⚡ PARSA7400 | DEVELOPER CENTER</h1>
+<br><br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&pause=900&color=00F5D4&center=true&vCenter=true&width=850&height=65&lines=%40parsa7400+%7C+Developer+Center;%F0%9F%A4%96+Bots+%26+Cloud+Architecture;%F0%9F%9B%A0%EF%B8%8F+Vanilla+JavaScript+%2B+REST+API;%F0%9F%94%A5+Dynamic+Portfolio+%26+Live+CMS;%F0%9F%92%BB+Building+The+Future" alt="Typing Animation">
-
-<br>
-
-<img src="https://img.shields.io/badge/STATUS-ACTIVE-00D68F?style=for-the-badge&logo=statuspage&logoColor=white">
-<img src="https://img.shields.io/badge/PROJECT-PERSONAL_PORTFOLIO-7928CA?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/OWNER-%40parsa7400-FF007A?style=for-the-badge">
-<img src="https://img.shields.io/badge/LICENSE-MIT-FFBE0B?style=for-the-badge">
+<img src="https://img.shields.io/badge/DEVELOPMENT-ACTIVE-00D68F?style=for-the-badge&labelColor=080D18">
+<img src="https://img.shields.io/badge/FOCUS-FULL_STACK-00C2FF?style=for-the-badge&labelColor=080D18">
+<img src="https://img.shields.io/badge/OWNER-PARSA7400-9B72F2?style=for-the-badge&labelColor=080D18">
+<img src="https://img.shields.io/badge/PLATFORM-GITHUB-FFFFFF?style=for-the-badge&logo=github&logoColor=black&labelColor=080D18">
 
 <br><br>
 
 <a href="https://parsa7400.github.io">
-<img src="https://img.shields.io/badge/🌐_LIVE_PREVIEW-OPEN_WEBSITE-00A8FF?style=for-the-badge">
+<img src="https://img.shields.io/badge/EXPLORE_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black&labelColor=080D18">
 </a>
 <a href="https://github.com/parsa7400/parsa7400.github.io">
-<img src="https://img.shields.io/badge/📂_SOURCE_CODE-GITHUB-181717?style=for-the-badge&logo=github">
+<img src="https://img.shields.io/badge/VIEW_SOURCE_CODE-FFFFFF?style=for-the-badge&logo=github&logoColor=white&labelColor=080D18">
 </a>
 <a href="https://parsa7400.github.io/?admin=1">
-<img src="https://img.shields.io/badge/🔐_ADMIN_PANEL-MANAGEMENT-FF4081?style=for-the-badge">
+<img src="https://img.shields.io/badge/ADMINISTRATION_PANEL-9B72F2?style=for-the-badge&logo=probot&logoColor=white&labelColor=080D18">
 </a>
 
 <br><br>
 
-<img src="https://komarev.com/ghpvc/?username=parsa7400&label=PROFILE+VIEWS&color=00F5D4&style=for-the-badge">
+<img src="https://komarev.com/ghpvc/?username=parsa7400&style=for-the-badge&color=00F5D4&label=PROFILE+VISITORS">
+
+<br><br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:00F5D4,50:536DFE,100:9B72F2">
 
 </div>
 
 ---
 
-## ⚡ درباره پروژه | About The Project
+## 01. PROJECT OVERVIEW
 
-**Parsa7400 Developer Center** یک پورتفولیوی شخصی مدرن و واکنش‌گرا برای نمایش مهارت‌ها، پروژه‌ها، فعالیت‌ها و مسیر توسعه نرم‌افزاری است.
+**Parsa7400 Developer Center** is a modern, performance-oriented personal developer portfolio designed to showcase software engineering projects, technical capabilities, development activities, and digital products.
 
-این پروژه با تمرکز بر سرعت، سادگی، تجربه کاربری و قابلیت توسعه طراحی شده و از معماری **Pure Vanilla JavaScript** استفاده می‌کند؛ بدون وابستگی به فریم‌ورک‌های سنگین مانند React و Vue.
+The platform is built around a lightweight architecture using **HTML5, CSS3, and Pure Vanilla JavaScript**, without depending on heavyweight frontend frameworks.
 
-یکی از بخش‌های اصلی این پروژه، سیستم مدیریت محتوای داخلی (CMS) است که امکان مدیریت اطلاعات پورتفولیو را از طریق یک رابط کاربری اختصاصی و اتصال به **GitHub REST API** فراهم می‌کند.
+Beyond a conventional portfolio, the project incorporates a dedicated content management environment that allows portfolio information to be managed through an administrative interface and synchronized with GitHub using the **GitHub REST API**.
+
+### Engineering Principles
+
+| Principle | Implementation |
+|:---|:---|
+| Performance | Lightweight frontend architecture |
+| Maintainability | Structured and organized source code |
+| Scalability | JSON-based content management |
+| Accessibility | Responsive and semantic interface |
+| Integration | GitHub REST API connectivity |
+| User Experience | Interactive UI and visual feedback |
+| Internationalization | Persian and English support |
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="85%" alt="Coding Animation">
+<img width="88%" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Software Engineering Animation">
 
 <br>
 
-**BUILD SMART. WRITE CLEAN. CREATE SOMETHING DIFFERENT.**
+**DESIGN WITH PURPOSE. ENGINEER WITH PRECISION. BUILD WITHOUT LIMITS.**
 
 </div>
 
 ---
 
-## 🚀 امکانات اصلی | Core Features
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎨 رابط کاربری
-- طراحی مدرن و مینیمال
-- رابط کاملاً واکنش‌گرا
-- پشتیبانی از حالت تاریک و روشن
-- انیمیشن‌های نرم و روان
-- کارت‌های تعاملی سه‌بعدی
-- افکت Ripple
-- تجربه کاربری بهینه
-
-</td>
-<td width="50%">
-
-### ⚙️ مدیریت محتوا
-- پنل مدیریت اختصاصی
-- ویرایش اطلاعات پروفایل
-- مدیریت مهارت‌ها
-- مدیریت پروژه‌ها
-- مدیریت لینک‌ها
-- ذخیره اطلاعات در GitHub
-- کنترل SHA فایل‌ها
-
-</td>
-</tr>
-<tr>
-<td>
-
-### 🌍 سیستم چندزبانه
-- زبان فارسی
-- زبان انگلیسی
-- پشتیبانی از RTL و LTR
-- تغییر زبان در رابط کاربری
-
-</td>
-<td>
-
-### 📊 قابلیت‌های پویا
-- شمارنده‌های متحرک
-- نوارهای پیشرفت مهارت
-- IntersectionObserver
-- بارگذاری اطلاعات JSON
-- اتصال به GitHub REST API
-
-</td>
-</tr>
-</table>
-
----
-
-## 🛠️ تکنولوژی‌های استفاده‌شده | Tech Stack
+## 02. PLATFORM CAPABILITIES
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" alt="Technology Stack">
-
-<br><br>
-
-| Technology | Usage |
-|:---:|:---|
-| HTML5 | ساختار صفحات |
-| CSS3 | طراحی و انیمیشن |
-| JavaScript | منطق و تعاملات |
-| Git | مدیریت نسخه |
-| GitHub REST API | ارتباط با مخزن |
-| JSON | ذخیره اطلاعات |
-| GitHub Pages | میزبانی وب‌سایت |
+<img src="https://img.shields.io/badge/01-USER_INTERFACE-00F5D4?style=flat-square&labelColor=080D18">
+<img src="https://img.shields.io/badge/02-CONTENT_MANAGEMENT-8B5CF6?style=flat-square&labelColor=080D18">
+<img src="https://img.shields.io/badge/03-API_INTEGRATION-00A8FF?style=flat-square&labelColor=080D18">
+<img src="https://img.shields.io/badge/04-DATA_ARCHITECTURE-FF4D9D?style=flat-square&labelColor=080D18">
 
 </div>
 
+### 2.1 Interface Engineering
+
+- Modern, responsive user interface.
+- Dark and light appearance modes.
+- Interactive three-dimensional card effects.
+- Smooth transitions and micro-interactions.
+- Ripple-based interaction feedback.
+- Animated counters and progress indicators.
+- IntersectionObserver-based viewport animations.
+- Responsive layouts for mobile, tablet, and desktop.
+
+### 2.2 Content Management System
+
+- Dedicated administration dashboard.
+- Dynamic profile management.
+- Skill creation, editing, and deletion.
+- Project and portfolio management.
+- Social and external link management.
+- Structured content editing.
+- GitHub repository synchronization.
+- SHA-based file version verification.
+
+### 2.3 Internationalization
+
+- Persian language support.
+- English language support.
+- Right-to-left and left-to-right layouts.
+- Language-aware interface rendering.
+- Localized content organization.
+
+### 2.4 Data and Integration
+
+- JSON-based portfolio storage.
+- GitHub Contents API integration.
+- Repository file management.
+- Version-aware content updates.
+- Structured data loading.
+- Client-side interaction management.
+
 ---
 
-## 🧠 معماری و ساختار پروژه | Architecture
+## 03. TECHNOLOGY STACK
 
-ساختار پروژه به‌گونه‌ای طراحی شده که مدیریت و توسعه آن ساده باشد.
+<div align="center">
+
+### Core Technologies
+
+<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark&perline=6" alt="Core Technology Stack">
+
+<br><br>
+
+### Development Environment
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white">
+
+</div>
+
+| Technology | Engineering Role |
+|:---|:---|
+| HTML5 | Semantic document structure |
+| CSS3 | Layout, styling, animations, and responsive design |
+| JavaScript | Application logic and interactive functionality |
+| Git | Source control and version management |
+| GitHub REST API | Repository communication and file operations |
+| JSON | Structured portfolio data |
+| GitHub Pages | Static website hosting |
+
+---
+
+## 04. SYSTEM ARCHITECTURE
+
+The repository follows a lightweight frontend architecture with a structured data layer and an integrated administrative interface.
+
+```text
+PARSA7400.DEVELOPER.CENTER
+│
+├── PRESENTATION LAYER
+│   │
+│   ├── Main Portfolio Interface
+│   ├── Responsive Layout System
+│   ├── Theme Management
+│   ├── Language Management
+│   └── Animation Engine
+│
+├── APPLICATION LAYER
+│   │
+│   ├── JavaScript Application Logic
+│   ├── Interactive Components
+│   ├── Content Rendering
+│   ├── Admin Dashboard
+│   └── API Communication
+│
+├── DATA LAYER
+│   │
+│   ├── portfolio.json
+│   ├── Profile Information
+│   ├── Skills Collection
+│   ├── Project Collection
+│   └── Social Links
+│
+└── INTEGRATION LAYER
+    │
+    ├── GitHub REST API
+    ├── Contents Endpoint
+    ├── SHA Verification
+    └── Repository Synchronization
+```
+
+### Repository Structure
 
 ```text
 parsa7400.github.io/
 │
 ├── index.html
-│   ├── Main Interface
-│   ├── CSS Styles
-│   ├── JavaScript Logic
-│   └── Admin Dashboard
+│   └── Main application, styling, scripts and admin interface
 │
 ├── portfolio.json
-│   └── Portfolio Data
+│   └── Structured portfolio data
 │
 └── README.md
-    └── Documentation
+    └── Project documentation
 ```
-
-### 📦 توضیح فایل‌ها
-
-| فایل | وظیفه |
-|:---|:---|
-| `index.html` | هسته اصلی وب‌سایت |
-| `portfolio.json` | اطلاعات و داده‌های پورتفولیو |
-| `README.md` | مستندات پروژه |
 
 ---
 
-## 🔐 پنل مدیریت | Admin Dashboard
+## 05. ADMINISTRATION ENVIRONMENT
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/CMS-INTEGRATED-8B5CF6?style=for-the-badge">
-<img src="https://img.shields.io/badge/API-GITHUB_REST-00F5D4?style=for-the-badge">
+<img src="https://img.shields.io/badge/ADMIN_SYSTEM-INTEGRATED-8B5CF6?style=for-the-badge&labelColor=080D18">
+<img src="https://img.shields.io/badge/INTEGRATION-GITHUB_API-00F5D4?style=for-the-badge&labelColor=080D18">
 
 </div>
 
-پورتفولیو دارای پنل مدیریتی اختصاصی است که برای مدیریت محتوای سایت طراحی شده است.
+The integrated administration environment provides a centralized interface for managing portfolio information.
 
-### قابلیت‌های مدیریتی
+### Management Modules
 
-| بخش | امکانات |
+| Module | Available Operations |
 |:---|:---|
-| 👤 Profile | مدیریت اطلاعات شخصی |
-| 📊 Skills | افزودن، ویرایش و حذف مهارت‌ها |
-| 🚀 Projects | مدیریت پروژه‌ها و لینک‌ها |
-| 🌐 Languages | مدیریت محتوای چندزبانه |
-| 💾 Synchronization | همگام‌سازی اطلاعات با GitHub |
-| 🔄 SHA Verification | بررسی نسخه فایل پیش از ذخیره |
-| ⚙️ Content Management | مدیریت محتوای سایت |
+| Profile Management | Edit personal information and biography |
+| Skills Management | Create, update, and remove skills |
+| Project Management | Manage projects, descriptions, and URLs |
+| Language Management | Organize multilingual content |
+| Repository Integration | Synchronize data with GitHub |
+| SHA Verification | Validate repository file versions |
+| Content Management | Maintain portfolio information |
 
-### 🌐 دسترسی به پنل
+### Administration Access
 
 <div align="center">
 
 <a href="https://parsa7400.github.io/?admin=1">
-<img src="https://img.shields.io/badge/OPEN_ADMIN_DASHBOARD-CLICK_HERE-FF4081?style=for-the-badge">
+<img src="https://img.shields.io/badge/ACCESS_ADMINISTRATION_DASHBOARD-OPEN_PANEL-9B72F2?style=for-the-badge&labelColor=080D18">
 </a>
 
 </div>
 
-**نسخه آنلاین:**
+**Production endpoint**
 
 ```text
 https://parsa7400.github.io/?admin=1
 ```
 
-**نسخه محلی:**
+**Local development endpoint**
 
 ```text
 http://localhost:5500/?admin=1
 ```
 
-> ⚠️ **نکته امنیتی مهم:** قرار دادن GitHub Personal Access Token در HTML یا JavaScript عمومی امن نیست. توکن باید در Backend امن نگهداری شود و درخواست‌های حساس از سمت سرور انجام شوند.
+### GitHub API Authentication
+
+The repository integration requires an appropriate authentication mechanism.
+
+1. Open GitHub account settings.
+2. Navigate to Developer settings.
+3. Open Personal access tokens.
+4. Select Fine-grained tokens.
+5. Generate a new token.
+6. Restrict access to the required repository.
+7. Configure the necessary repository permissions.
+8. Use the token through a secure server-side integration.
+
+> **Security requirement:** Never embed a GitHub Personal Access Token in public HTML, CSS, JavaScript, or client-side configuration. Browser-exposed credentials can be extracted. Production deployments should use a secure backend or another trusted server-side authentication mechanism.
 
 ---
 
-# 💻 راهنمای نصب و راه‌اندازی | Installation Guide
+## 06. LOCAL DEVELOPMENT ENVIRONMENT
 
-<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="100%" alt="Development">
+### System Requirements
 
-### 01 — پیش‌نیازها
-
-برای اجرای پروژه به نرم‌افزارهای زیر نیاز دارید:
-
-| Software | Purpose | Download |
+| Component | Purpose | Official Resource |
 |:---|:---|:---|
-| Git | دریافت و مدیریت مخزن | [Download](https://git-scm.com/downloads) |
-| VS Code | ویرایش کد | [Download](https://code.visualstudio.com/) |
-| Google Chrome | اجرای وب‌سایت | [Download](https://www.google.com/chrome/) |
-| Python | سرور محلی اختیاری | [Download](https://www.python.org/downloads/) |
+| Git | Repository cloning and version control | [Git Downloads](https://git-scm.com/downloads) |
+| Visual Studio Code | Development environment | [VS Code](https://code.visualstudio.com/) |
+| Google Chrome | Browser testing | [Chrome](https://www.google.com/chrome/) |
+| Python | Optional local HTTP server | [Python](https://www.python.org/downloads/) |
 
-### 02 — دریافت سورس کد
+### Step 01 — Clone the Repository
 
-ترمینال CMD یا PowerShell را باز کنید:
+Open PowerShell, Command Prompt, or your preferred terminal.
 
 ```bash
 git clone https://github.com/parsa7400/parsa7400.github.io.git
 ```
 
-وارد پوشه پروژه شوید:
+Navigate into the project directory:
 
 ```bash
 cd parsa7400.github.io
 ```
 
-### 03 — باز کردن در VS Code
+### Step 02 — Open the Development Environment
 
 ```bash
 code .
 ```
 
-در صورت کار نکردن دستور، پوشه پروژه را از طریق گزینه زیر باز کنید:
+Alternatively, open Visual Studio Code and select:
 
-`File → Open Folder`
+```text
+File → Open Folder → parsa7400.github.io
+```
 
-### 04 — اجرای پروژه
+### Step 03 — Launch the Local Website
 
-**روش اول: Live Server**
+**Option A — Live Server**
 
-1. وارد بخش Extensions شوید.
-2. عبارت Live Server را جستجو کنید.
-3. افزونه را نصب کنید.
-4. فایل `index.html` را باز کنید.
-5. روی Open with Live Server کلیک کنید.
+1. Open the Extensions marketplace.
+2. Search for Live Server.
+3. Install the extension.
+4. Open `index.html`.
+5. Select Open with Live Server.
 
-آدرس پیش‌فرض:
+Default development address:
 
 ```text
 http://127.0.0.1:5500
 ```
 
-**روش دوم: Python HTTP Server**
+**Option B — Python HTTP Server**
+
+Execute:
 
 ```bash
 python -m http.server 8000
 ```
 
-سپس وارد آدرس زیر شوید:
+Open the following address:
 
 ```text
 http://localhost:8000
 ```
 
-برای توقف سرور:
+Terminate the local server using:
 
 ```text
 CTRL + C
 ```
 
-### 05 — شخصی‌سازی اطلاعات
+### Step 04 — Customize Portfolio Data
 
-فایل زیر را باز کنید:
+Open:
 
 ```text
 portfolio.json
 ```
 
-اطلاعات قابل شخصی‌سازی:
+Depending on the existing JSON schema, the portfolio information can be customized to include:
 
-- اطلاعات پروفایل
-- بیوگرافی
-- مهارت‌های برنامه‌نویسی
-- پروژه‌ها
-- لینک‌های شبکه‌های اجتماعی
-- محتوای زبان فارسی و انگلیسی
+- Personal profile information.
+- Professional biography.
+- Programming skills.
+- Project descriptions.
+- Project URLs.
+- Social media links.
+- Persian and English content.
 
-> نکته: هنگام ویرایش JSON، ساختار داده‌ها، کوتیشن‌ها، کاماها و براکت‌ها را حفظ کنید.
+**Important:** Preserve the existing JSON structure and validate syntax before deploying changes.
 
-### 06 — انتشار با GitHub Pages
+### Step 05 — Deploy with GitHub Pages
 
-1. وارد GitHub شوید.
-2. یک Repository جدید بسازید.
-3. نام آن را `USERNAME.github.io` قرار دهید.
-4. فایل‌های پروژه را بارگذاری کنید.
-5. به Settings بروید.
-6. بخش Pages را باز کنید.
-7. گزینه Deploy from a branch را انتخاب کنید.
-8. شاخه `main` و پوشه `/ (root)` را انتخاب کنید.
-9. روی Save بزنید.
+1. Create a GitHub repository.
+2. Upload the project files.
+3. Configure the repository name according to your desired GitHub Pages URL.
+4. Navigate to Settings.
+5. Open Pages.
+6. Select Deploy from a branch.
+7. Choose the `main` branch.
+8. Select the `/ (root)` directory.
+9. Save the configuration.
 
-آدرس انتشار:
+For a user-site repository named `USERNAME.github.io`, the expected website address is:
 
 ```text
 https://USERNAME.github.io
@@ -334,104 +391,117 @@ https://USERNAME.github.io
 
 ---
 
-## 🌐 لینک‌های پروژه | Project Links
+## 07. PROJECT ENDPOINTS
 
 <div align="center">
 
-| بخش | لینک |
+| SERVICE | DESTINATION |
 |:---|:---|
-| 🌍 وب‌سایت اصلی | [Live Website](https://parsa7400.github.io) |
-| 🔐 پنل مدیریت | [Admin Dashboard](https://parsa7400.github.io/?admin=1) |
-| 📂 مخزن GitHub | [Repository](https://github.com/parsa7400/parsa7400.github.io) |
-| 📊 فایل اطلاعات | [portfolio.json](https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json) |
-| 📜 مستندات | [README.md](https://github.com/parsa7400/parsa7400.github.io/blob/main/README.md) |
+| LIVE WEBSITE | [parsa7400.github.io](https://parsa7400.github.io) |
+| ADMINISTRATION | [Admin Dashboard](https://parsa7400.github.io/?admin=1) |
+| SOURCE REPOSITORY | [GitHub Repository](https://github.com/parsa7400/parsa7400.github.io) |
+| PORTFOLIO DATABASE | [portfolio.json](https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json) |
+| DOCUMENTATION | [README.md](https://github.com/parsa7400/parsa7400.github.io/blob/main/README.md) |
 
 </div>
 
 ---
 
-## 🧰 عیب‌یابی | Troubleshooting
+## 08. TROUBLESHOOTING
 
-| مشکل | راه‌حل |
+| Issue | Recommended Resolution |
 |:---|:---|
-| سایت اجرا نمی‌شود | سرور محلی و آدرس را بررسی کنید. |
-| اطلاعات بارگذاری نمی‌شوند | اعتبار ساختار `portfolio.json` را بررسی کنید. |
-| Git شناسایی نمی‌شود | نصب Git و متغیر PATH را بررسی کنید. |
-| Live Server کار نمی‌کند | افزونه را نصب یا فعال کنید. |
-| ذخیره GitHub ناموفق است | مجوزها و احراز هویت API را بررسی کنید. |
-| تصاویر نمایش داده نمی‌شوند | آدرس تصاویر را بررسی کنید. |
-| تغییرات نمایش داده نمی‌شوند | Cache مرورگر را پاک کنید. |
-| پنل مدیریت کار نمی‌کند | تنظیمات و دسترسی‌های لازم را بررسی کنید. |
+| Website does not load | Verify the local server and requested URL |
+| Portfolio data is missing | Validate the JSON structure and loading path |
+| Git command is unavailable | Install Git and configure the system PATH |
+| Live Server fails to launch | Verify extension installation and activation |
+| GitHub synchronization fails | Review API permissions and authentication |
+| Images are unavailable | Verify image URLs and external resource access |
+| Recent changes are missing | Refresh the browser and clear cached resources |
+| Admin interface is unavailable | Verify the application configuration and access requirements |
 
 ---
 
-## 📚 مستندات و منابع | Documentation
+## 09. DOCUMENTATION & DEVELOPER RESOURCES
 
 <div align="center">
 
 <a href="https://docs.github.com/en/rest">
-<img src="https://img.shields.io/badge/GitHub_REST_API-181717?style=for-the-badge&logo=github">
+<img src="https://img.shields.io/badge/GITHUB_REST_API-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
+
 <a href="https://pages.github.com/">
-<img src="https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages">
+<img src="https://img.shields.io/badge/GITHUB_PAGES-222222?style=for-the-badge&logo=githubpages&logoColor=white">
 </a>
+
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-<img src="https://img.shields.io/badge/JavaScript_MDN-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/JAVASCRIPT_DOCUMENTATION-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </a>
+
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/HTML5_DOCUMENTATION-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 </a>
+
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3_DOCUMENTATION-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 </a>
+
 <a href="https://code.visualstudio.com/docs">
-<img src="https://img.shields.io/badge/VS_Code_Docs-007ACC?style=for-the-badge&logo=visualstudiocode">
+<img src="https://img.shields.io/badge/VISUAL_STUDIO_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
 </a>
 
 </div>
 
 ---
 
-## 📊 مشخصات پروژه | Project Information
+## 10. PROJECT SPECIFICATIONS
 
-| Property | Value |
+| Specification | Details |
 |:---|:---|
-| Project Name | Parsa7400 Developer Center |
-| Developer | @parsa7400 |
-| Main Technologies | HTML / CSS / JavaScript |
+| Project | Parsa7400 Developer Center |
+| Maintainer | @parsa7400 |
+| Primary Technologies | HTML5, CSS3, JavaScript |
 | Architecture | Vanilla JavaScript |
-| API | GitHub REST API |
+| API Integration | GitHub REST API |
 | Data Format | JSON |
-| Hosting | GitHub Pages |
+| Deployment Platform | GitHub Pages |
+| Repository Visibility | Public |
 | License | MIT |
-| Repository | Public |
 
 ---
 
-## 🤝 ارتباط با توسعه‌دهنده | Connect With Me
+## 11. CONNECT & EXPLORE
 
 <div align="center">
 
 <a href="https://github.com/parsa7400">
-<img src="https://img.shields.io/badge/GitHub-%40parsa7400-181717?style=for-the-badge&logo=github">
+<img src="https://img.shields.io/badge/GITHUB_PROFILE-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 
 <a href="https://parsa7400.github.io">
-<img src="https://img.shields.io/badge/Portfolio-Visit_Website-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black">
+<img src="https://img.shields.io/badge/PERSONAL_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black">
 </a>
 
 <br><br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&pause=1000&color=00F5D4&center=true&vCenter=true&width=650&height=55&lines=Thanks+For+Visiting+%F0%9F%92%9A;Keep+Coding+%E2%9A%A1;Keep+Building+%F0%9F%9A%80;Never+Stop+Learning+%F0%9F%A7%A0" alt="Footer Typing">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2800&pause=1000&color=00F5D4&center=true&vCenter=true&width=700&height=60&lines=INNOVATION+STARTS+WITH+AN+IDEA;ENGINEERING+MAKES+IT+REAL;BUILD+WHAT+DOES+NOT+EXIST+YET;THE+NEXT+VERSION+IS+ALWAYS+BETTER" alt="Engineering Philosophy">
+
+<br><br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:050816,35:172B4D,70:087F8C,100:00F5D4&section=footer">
+
+### PARSA7400
+
+**SOFTWARE DEVELOPMENT · ENGINEERING · INNOVATION**
+
+`DESIGN WITH INTENT` &nbsp; `BUILD WITH PRECISION` &nbsp; `THINK BEYOND LIMITS`
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5D4,50:7928CA,100:080A10&height=150&section=footer" width="100%">
-
-### © 2026 PARSA7400
-
-**Designed & Developed with ❤️ and Code.**
-
-`BUILD • CREATE • INNOVATE`
+<sub>© 2026 PARSA7400. All rights reserved.</sub>
 
 </div>
+
+<!-- ============================================================ -->
+<!-- END OF PARSA7400 DEVELOPER CENTER README -->
+<!-- ============================================================ -->
