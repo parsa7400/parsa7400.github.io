@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#090d19">
   <meta name="description" id="pageDescription" content="وب‌سایت شخصی و نمونه‌کارها">
   <title>parsa7400 | نمونه‌کارها</title>
@@ -15,27 +15,34 @@
       --surface-2: #172038;
       --text: #f4f6ff;
       --muted: #a5b2ca;
-      --line: rgba(255,255,255,.11);
+      --line: rgba(255, 255, 255, 0.11);
       --accent: #9061f9;
       --accent-2: #20c997;
+      --accent-glow: rgba(144, 97, 249, 0.25);
       --danger: #fb7185;
       --radius: 20px;
       --max: 1160px;
-      --shadow: 0 22px 70px rgba(0,0,0,.28);
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
       font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+      -webkit-tap-highlight-color: transparent;
+    }
     body {
       margin: 0;
       min-width: 320px;
       color: var(--text);
       line-height: 1.8;
       background:
-        radial-gradient(circle at 12% 10%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 34%),
-        radial-gradient(circle at 86% 26%, color-mix(in srgb, var(--accent-2) 11%, transparent), transparent 36%),
+        radial-gradient(circle at 10% 12%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 38%),
+        radial-gradient(circle at 88% 28%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 36%),
+        radial-gradient(circle at 50% 85%, rgba(144, 97, 249, 0.08), transparent 45%),
         var(--bg);
+      background-attachment: fixed;
       overflow-x: hidden;
     }
     [hidden] { display: none !important; }
@@ -44,108 +51,195 @@
     button { cursor: pointer; }
     :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
     ::selection { background: var(--accent); color: white; }
-    .container { width: min(var(--max), calc(100% - 36px)); margin-inline: auto; }
+
+    .container { width: min(var(--max), calc(100% - 32px)); margin-inline: auto; }
     .muted { color: var(--muted); }
     .ltr { direction: ltr; text-align: left; }
     .stack { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
     .space-between { display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap; }
 
+    /* نوار وضعیت اسکرول صفحه */
+    #scrollProgress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      z-index: 100;
+      transition: width 0.1s ease-out;
+    }
+
+    /* افکت‌های نوری پس‌زمینه */
     .orb {
       position: fixed;
-      width: 380px;
+      width: 420px;
       aspect-ratio: 1;
       border-radius: 50%;
       background: var(--accent);
-      opacity: .08;
+      opacity: .09;
+      filter: blur(95px);
+      pointer-events: none;
+      top: 15%;
+      left: -140px;
+      z-index: -1;
+      animation: drift 15s ease-in-out infinite alternate;
+    }
+    .orb-2 {
+      position: fixed;
+      width: 320px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--accent-2);
+      opacity: .07;
       filter: blur(85px);
       pointer-events: none;
-      top: 20%;
-      left: -170px;
+      bottom: 12%;
+      right: -100px;
       z-index: -1;
-      animation: drift 13s ease-in-out infinite alternate;
+      animation: drift 12s ease-in-out infinite alternate-reverse;
     }
-    @keyframes drift { to { transform: translate(110px, 110px); } }
-    @keyframes enter {
-      from { opacity: 0; transform: translateY(18px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes float {
-      50% { transform: translateY(-9px); }
-    }
-    .reveal { animation: enter .65s both; }
+    @keyframes drift { to { transform: translate(100px, 90px) scale(1.1); } }
 
+    /* انیمیشن ظاهر شدن روان در زمان اسکرول */
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .scroll-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* نوار ناوبری صاف، شیشه‌ای و دقیق */
     .topbar {
       position: sticky;
       top: 0;
-      z-index: 50;
-      background: rgba(9,13,25,.86);
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(9, 13, 25, 0.88);
       backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--line);
+      border-radius: 0 !important;
+      margin: 0;
+      padding: 0;
     }
     .nav {
-      min-height: 74px;
+      min-height: 64px;
       display: flex;
       align-items: center;
-      gap: 18px;
       justify-content: space-between;
+      gap: 16px;
+      flex-wrap: nowrap; /* ممانعت قطعی از افتادن لینک‌ها به خط بعد */
     }
-    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 900; white-space: nowrap; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 15px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
     .brand-mark {
-      width: 42px;
-      height: 42px;
+      width: 36px;
+      height: 36px;
       display: grid;
       place-items: center;
-      border-radius: 13px;
+      border-radius: 10px;
       border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
       background: linear-gradient(140deg, var(--accent), var(--accent-2));
-      box-shadow: 0 5px 28px color-mix(in srgb, var(--accent) 35%, transparent);
+      box-shadow: 0 4px 16px var(--accent-glow);
       color: white;
-      font: bold 15px ui-monospace, monospace;
+      font: bold 13px ui-monospace, monospace;
+      transition: transform .25s ease;
+      flex-shrink: 0;
     }
-    .nav-links { display: flex; align-items: center; gap: 18px; font-size: 14px; }
-    .nav-links a:not(.btn) { color: var(--muted); transition: color .2s; white-space: nowrap; }
-    .nav-links a:hover { color: white; }
+    .brand:hover .brand-mark { transform: rotate(8deg) scale(1.05); }
 
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13.5px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+    .nav-links[hidden] {
+      display: none !important;
+    }
+    .nav-links a:not(.btn) {
+      color: var(--muted);
+      transition: color .2s, background .2s;
+      white-space: nowrap;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+    .nav-links a:not(.btn):hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    #langToggle {
+      flex-shrink: 0;
+    }
+
+    /* دکمه‌ها و عناصر تعاملی */
     .btn, .chip {
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.045);
+      background: rgba(255, 255, 255, 0.045);
       color: var(--text);
-      border-radius: 11px;
-      min-height: 42px;
+      border-radius: 12px;
+      min-height: 44px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      gap: 7px;
-      padding: 8px 16px;
+      gap: 8px;
+      padding: 8px 18px;
       font-weight: 700;
       font-size: 13px;
       transition: transform .2s, border-color .2s, background .2s, box-shadow .2s;
+      touch-action: manipulation;
     }
     .btn:hover:not(:disabled), .chip:hover {
       transform: translateY(-2px);
       border-color: color-mix(in srgb, var(--accent) 55%, white 10%);
-      background: rgba(255,255,255,.09);
+      background: rgba(255, 255, 255, 0.09);
     }
+    .btn:active:not(:disabled) { transform: scale(0.97); }
     .btn:disabled { opacity: .55; cursor: wait; }
     .btn-primary {
       background: linear-gradient(130deg, var(--accent), #6552d9);
       border-color: transparent;
       color: white;
-      box-shadow: 0 8px 28px color-mix(in srgb, var(--accent) 30%, transparent);
+      box-shadow: 0 6px 24px var(--accent-glow);
     }
-    .btn-danger { color: #ffc1ca; border-color: rgba(251,113,133,.35); }
-    .btn-small { min-height: 35px; padding: 5px 11px; font-size: 12px; }
-    .chip { min-height: 35px; border-radius: 99px; color: var(--muted); }
+    .btn-danger { color: #ffc1ca; border-color: rgba(251, 113, 133, 0.35); background: rgba(251, 113, 133, 0.08); }
+    .btn-small { min-height: 38px; padding: 6px 13px; font-size: 12px; }
+    .chip { min-height: 36px; border-radius: 99px; color: var(--muted); }
     .chip.active { color: white; background: color-mix(in srgb, var(--accent) 25%, transparent); border-color: var(--accent); }
 
-    main > section { padding-block: 57px; }
+    /* سکشن‌ها و لایه‌بندی */
+    main > section { padding-block: 55px; }
     .hero {
-      min-height: 560px;
+      min-height: 540px;
       display: grid;
-      grid-template-columns: 1.12fr .88fr;
+      grid-template-columns: 1.15fr .85fr;
       align-items: center;
-      gap: 45px;
-      padding-block: 75px 55px;
+      gap: 40px;
+      padding-block: 70px 50px;
     }
     .eyebrow {
       color: var(--accent-2);
@@ -172,43 +266,48 @@
       box-shadow: 0 0 13px currentColor;
     }
     h1, h2, h3, h4, p { margin-top: 0; }
-    h1 { font-size: clamp(36px, 6vw, 66px); line-height: 1.18; margin-bottom: 17px; }
-    h2 { font-size: clamp(27px, 3.7vw, 37px); line-height: 1.35; }
+    h1 { font-size: clamp(34px, 5.5vw, 62px); line-height: 1.2; margin-bottom: 16px; font-weight: 900; }
+    h2 { font-size: clamp(25px, 3.5vw, 36px); line-height: 1.35; font-weight: 800; }
     .gradient-text {
       background: linear-gradient(110deg, #cabaff, var(--accent-2), #f6a2d7);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
     }
-    .lead { max-width: 650px; font-size: 18px; color: var(--muted); margin-bottom: 25px; }
+    .lead { max-width: 650px; font-size: 17px; color: var(--muted); margin-bottom: 24px; }
+    
+    /* پنل‌ها و کارت‌ها */
     .panel, .profile-card, .project-card, .form-card {
-      background: linear-gradient(155deg, rgba(24,32,53,.93), rgba(14,20,36,.94));
+      background: linear-gradient(155deg, rgba(24, 32, 53, 0.85), rgba(14, 20, 36, 0.92));
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
     .panel, .form-card { padding: 26px; }
-    .profile-card { padding: 31px; animation: float 6s ease-in-out infinite; }
+    .profile-card { padding: 30px; animation: floatCard 6s ease-in-out infinite; }
     .profile-top { display: flex; gap: 16px; align-items: center; margin-bottom: 18px; }
     .avatar {
-      width: 70px; height: 70px;
+      width: 72px; height: 72px;
       object-fit: cover;
-      border-radius: 19px;
+      border-radius: 20px;
       display: grid;
       place-items: center;
       background: linear-gradient(140deg, var(--accent), var(--accent-2));
       color: white;
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 900;
       flex: none;
+      box-shadow: 0 6px 20px var(--accent-glow);
     }
     .profile-top h3 { margin: 0; font-size: 20px; overflow-wrap: anywhere; }
     .profile-top p { margin: 0; font-size: 13px; color: var(--muted); }
     .pill {
       display: inline-flex;
-      padding: 3px 10px;
+      padding: 4px 11px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.035);
+      background: rgba(255, 255, 255, 0.04);
       border-radius: 9px;
       color: var(--muted);
       font-size: 12px;
@@ -217,68 +316,89 @@
     .section-head h2 { margin: 5px 0; }
     .section-head p { color: var(--muted); margin: 0; font-size: 14px; }
     .body-copy { white-space: pre-line; color: var(--muted); margin: 0; }
-    .skills-grid, .projects-grid { display: grid; gap: 17px; }
-    .skills-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-    .projects-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%,310px),1fr)); }
-    .skill { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.025); }
+    
+    .skills-grid, .projects-grid { display: grid; gap: 18px; }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .projects-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr)); }
+    
+    .skill {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.025);
+      transition: transform .25s, border-color .25s;
+    }
+    .skill:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
     .skill-title { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; font-weight: 700; }
     .skill-title b { color: var(--accent-2); }
-    .meter { height: 7px; background: rgba(255,255,255,.09); border-radius: 30px; margin-top: 12px; overflow: hidden; }
-    .meter > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg,var(--accent),var(--accent-2)); }
-    .filters { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 22px; }
-    .filters input { flex: 1 1 240px; }
+    .meter { height: 7px; background: rgba(255, 255, 255, 0.09); border-radius: 30px; margin-top: 12px; overflow: hidden; }
+    .meter > span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transition: width 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .filters { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 22px; }
+    .filters input { flex: 1 1 220px; }
     .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    
     .project-card {
       display: flex;
       flex-direction: column;
-      padding: 23px;
-      transition: transform .25s, border-color .25s, box-shadow .25s;
+      padding: 24px;
+      transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1), border-color .3s, box-shadow .3s;
     }
     .project-card:hover {
       transform: translateY(-6px);
-      border-color: color-mix(in srgb, var(--accent) 55%, transparent);
-      box-shadow: 0 25px 55px rgba(0,0,0,.35);
+      border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+      box-shadow: 0 25px 55px rgba(0, 0, 0, 0.4);
     }
     .project-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
     .project-head h3 { font-size: 18px; line-height: 1.4; }
     .project-card p { color: var(--muted); font-size: 14px; white-space: pre-line; flex: 1; }
     .tech { color: var(--accent-2); font-size: 12px; overflow-wrap: anywhere; }
     .project-links { margin-top: 18px; }
+    
     .contact-box {
       padding: 30px;
       border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
       border-radius: var(--radius);
       background: linear-gradient(125deg,
-        color-mix(in srgb, var(--accent) 15%, var(--surface)),
-        color-mix(in srgb, var(--accent-2) 8%, var(--surface)));
+        color-mix(in srgb, var(--accent) 16%, var(--surface)),
+        color-mix(in srgb, var(--accent-2) 9%, var(--surface)));
     }
     .empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 35px; }
 
-    .admin-shell { max-width: 1100px; padding-block: 35px 80px; }
+    /* پنل مدیریت ادمین */
+    .admin-shell { max-width: 1100px; padding-block: 35px 95px; }
     .admin-header { margin-bottom: 25px; }
-    .admin-header h1 { font-size: 31px; }
+    .admin-header h1 { font-size: 30px; }
     .admin-sections { display: grid; gap: 20px; }
     .form-card h2 { font-size: 21px; margin-bottom: 16px; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
     .form-group { min-width: 0; margin-bottom: 14px; }
     label { display: block; color: var(--muted); font-size: 13px; font-weight: 700; margin-bottom: 7px; }
     .field {
       width: 100%;
       min-height: 44px;
       border: 1px solid var(--line);
-      border-radius: 10px;
-      background: rgba(255,255,255,.045);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.05);
       color: var(--text);
-      padding: 9px 12px;
+      padding: 10px 14px;
       outline: none;
+      transition: border-color .2s;
     }
     .field:focus { border-color: var(--accent); }
-    textarea.field { min-height: 100px; resize: vertical; }
-    input[type="color"].field { padding: 5px; height: 45px; }
+    textarea.field { min-height: 105px; resize: vertical; }
+    input[type="color"].field { padding: 4px; height: 46px; cursor: pointer; }
     .hint { color: var(--muted); font-size: 12px; }
     .notice {
-      border: 1px solid rgba(245,158,11,.4);
-      background: rgba(245,158,11,.08);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      background: rgba(245, 158, 11, 0.08);
       padding: 13px 16px;
       border-radius: 11px;
       font-size: 13px;
@@ -289,71 +409,192 @@
       border: 1px solid var(--line);
       border-radius: 13px;
       margin-bottom: 10px;
-      background: rgba(255,255,255,.025);
+      background: rgba(255, 255, 255, 0.025);
     }
     .row-fields { display: grid; grid-template-columns: 1fr 1fr 100px; gap: 10px; }
     .row-actions { display: flex; justify-content: flex-end; gap: 6px; flex-wrap: wrap; margin-top: 9px; }
-    .list-title { font-weight: 800; overflow-wrap: anywhere; }
+
+    /* نوار ابزار پایین ادمین - بهینه‌شده برای موبایل */
     .admin-tools {
-      position: sticky;
-      bottom: 12px;
-      z-index: 30;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
       display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
+      gap: 10px;
       align-items: center;
       justify-content: space-between;
-      padding: 14px;
-      border: 1px solid var(--line);
-      border-radius: 15px;
-      background: rgba(15,21,37,.96);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(14px);
+      padding: 12px 18px;
+      padding-bottom: max(12px, env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line);
+      background: rgba(15, 21, 37, 0.95);
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
+    .admin-tools .stack {
+      flex: 1;
+      justify-content: flex-end;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .admin-tools .btn { flex-shrink: 0; }
+
     .toast {
       position: fixed;
-      bottom: 25px;
+      bottom: 75px;
       left: 50%;
       z-index: 100;
       transform: translateX(-50%);
-      padding: 12px 20px;
+      padding: 12px 22px;
       border: 1px solid var(--line);
       border-radius: 12px;
-      background: #26344c;
+      background: #1e293b;
       box-shadow: var(--shadow);
-      max-width: min(90vw,600px);
+      max-width: min(92vw, 550px);
       text-align: center;
+      font-weight: 600;
     }
     .site-warning {
       margin-top: 18px;
-      border: 1px solid rgba(245,158,11,.35);
+      border: 1px solid rgba(245, 158, 11, 0.35);
       border-radius: 12px;
       padding: 9px 13px;
       color: #ffdda3;
       font-size: 13px;
     }
-    footer { border-top: 1px solid var(--line); color: var(--muted); text-align: center; padding: 30px 18px; font-size: 13px; }
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      padding: 30px 18px;
+      padding-bottom: calc(30px + env(safe-area-inset-bottom));
+      font-size: 13px;
+    }
 
     @media (max-width: 850px) {
-      .hero { grid-template-columns: 1fr; min-height: unset; padding-top: 50px; }
+      .hero { grid-template-columns: 1fr; min-height: unset; padding-top: 40px; gap: 32px; }
       .profile-card { animation: none; }
-      .nav { flex-wrap: wrap; padding-block: 10px; }
-      .nav-links { width: 100%; overflow-x: auto; padding-bottom: 4px; gap: 13px; }
+      
+      /* هدر صاف و تک‌خطی در موبایل */
+      .nav {
+        min-height: 56px;
+        gap: 8px;
+        flex-wrap: nowrap; /* بدون شکستگی خط */
+      }
+      .brand span:last-child {
+        font-size: 14px;
+      }
+      .nav-links {
+        gap: 6px;
+        overflow-x: auto; /* اسکرول افقی نرم اگر تعداد لینک‌ها در صفحه کوچک زیاد شد */
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+      .nav-links a:not(.btn) {
+        padding: 5px 7px;
+        font-size: 12px;
+      }
+      .btn-small {
+        min-height: 32px;
+        padding: 4px 9px;
+        font-size: 11.5px;
+      }
     }
     @media (max-width: 620px) {
-      main > section { padding-block: 38px; }
+      main > section { padding-block: 36px; }
       .skills-grid, .grid-2, .row-fields { grid-template-columns: 1fr; }
-      .panel, .form-card, .profile-card { padding: 19px; }
-      .admin-tools { position: static; }
+      .panel, .form-card, .profile-card { padding: 18px; border-radius: 16px; }
+      .avatar { width: 62px; height: 62px; font-size: 22px; }
+      #saveState { display: none; } /* در گوشی‌های خیلی باریک برای باز شدن جا برای دکمه‌ها */
     }
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
     }
+    
+    /* جلوه درخشش نوار مهارت‌ها */
+    .meter {
+      position: relative;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .meter > span {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+    .meter > span::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transform: translateX(-100%);
+      animation: shimmer 2.2s infinite;
+    }
+    @keyframes shimmer {
+      100% { transform: translateX(100%); }
+    }
+
+    /* پرسپکتیو برای جلوه ۳بعدی تعاملی */
+    .project-card, .profile-card {
+      transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+      will-change: transform;
+      transform-style: preserve-3d;
+    }
+
+    /* کرسر چشمک‌زن افکت تایپ در Hero */
+    .typing-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1.1em;
+      vertical-align: middle;
+      background-color: var(--accent-2);
+      margin-inline-start: 4px;
+      animation: blink 0.8s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* جلوه ریپل هنگام کلیک روی دکمه‌ها */
+    .btn {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn .ripple-wave {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.35);
+      transform: scale(0);
+      animation: rippleEffect 0.6s linear;
+      pointer-events: none;
+    }
+    @keyframes rippleEffect {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
   </style>
 </head>
 
 <body>
+  <div id="scrollProgress"></div>
   <div class="orb" aria-hidden="true"></div>
+  <div class="orb-2" aria-hidden="true"></div>
 
   <header class="topbar">
     <div class="container nav">
@@ -408,7 +649,7 @@
       </div>
     </section>
 
-    <section class="container" id="about">
+    <section class="container scroll-reveal" id="about">
       <div class="section-head">
         <span class="eyebrow" data-copy="aboutKicker"></span>
         <h2 data-copy="aboutTitle"></h2>
@@ -416,7 +657,7 @@
       <div class="panel"><p class="body-copy" id="aboutText"></p></div>
     </section>
 
-    <section class="container" id="skills">
+    <section class="container scroll-reveal" id="skills">
       <div class="section-head">
         <span class="eyebrow" data-copy="skillsKicker"></span>
         <h2 data-copy="skillsTitle"></h2>
@@ -425,7 +666,7 @@
       <div class="skills-grid" id="skillsList"></div>
     </section>
 
-    <section class="container" id="projects">
+    <section class="container scroll-reveal" id="projects">
       <div class="section-head">
         <span class="eyebrow" data-copy="projectsKicker"></span>
         <h2 data-copy="projectsTitle"></h2>
@@ -438,7 +679,7 @@
       <div class="projects-grid" id="projectsList"></div>
     </section>
 
-    <section class="container" id="contact">
+    <section class="container scroll-reveal" id="contact">
       <div class="contact-box space-between">
         <div>
           <span class="eyebrow" data-copy="contactKicker"></span>
@@ -547,12 +788,194 @@
   <footer>© <span id="year"></span> <span id="footerText"></span></footer>
 
   <script>
+    // اسکریپت کنترل انیمیشن‌های مبتنی بر اسکرول
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      const progressBar = document.getElementById('scrollProgress');
+      if (progressBar) progressBar.style.width = scrolled + '%';
+    }, { passive: true });
+
+    // باز شدن المان‌ها به محض رسیدن به دید کاربر در اسکرول
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          // انیمیشن پر شدن نوارهای مهارت
+          entry.target.querySelectorAll('.meter > span').forEach(span => {
+            span.style.width = span.getAttribute('data-level') || span.style.width;
+          });
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+/* =========================================================
+   ۱. انیمیشن کاملاً هم‌زمان شمارش درصد و پر شدن نوار
+   ========================================================= */
+function animateSkillBarsAndNumbers() {
+  const skillsSection = document.getElementById('skills');
+  if (!skillsSection) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const skillItems = entry.target.querySelectorAll('.skill');
+
+        skillItems.forEach((skill, index) => {
+          // تاخیر پله‌ای برای هر ردیف مهارت
+          setTimeout(() => {
+            const meterSpan = skill.querySelector('.meter > span');
+            const percentLabel = skill.querySelector('.skill-title b');
+            if (!meterSpan || !percentLabel) return;
+
+            const targetVal = parseInt(meterSpan.getAttribute('data-target') || '0', 10);
+            if (targetVal <= 0) {
+              meterSpan.style.width = '0%';
+              percentLabel.textContent = '0%';
+              return;
+            }
+
+            const duration = 1200; // مدت کل انیمیشن: ۱.۲ ثانیه
+            let startTime = null;
+
+            function step(currentTime) {
+              if (!startTime) startTime = currentTime;
+              const elapsed = currentTime - startTime;
+              // محاسبه درصد پیشرفت از 0 تا 1
+              const progress = Math.min(elapsed / duration, 1);
+
+              // استفاده از تابع سهولت (Ease-Out) برای نرم شدن در انتها
+              const easeOut = 1 - Math.pow(1 - progress, 3);
+
+              // مقدار لحظه‌ای دقیق هم برای نوار و هم برای عدد
+              const currentVal = Math.round(easeOut * targetVal);
+
+              meterSpan.style.width = (easeOut * targetVal) + '%';
+              percentLabel.textContent = currentVal + '%';
+
+              if (progress < 1) {
+                requestAnimationFrame(step);
+              } else {
+                // اطمینان از قرار گرفتن دقیق روی عدد نهایی
+                meterSpan.style.width = targetVal + '%';
+                percentLabel.textContent = targetVal + '%';
+              }
+            }
+
+            requestAnimationFrame(step);
+
+          }, index * 100);
+        });
+
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(skillsSection);
+}
+
+/* =========================================================
+   ۲. افکت تایپ متن عنوان شغلی (Typewriter Effect)
+   ========================================================= */
+function initTypewriter(text) {
+  const roleElem = document.getElementById('heroRole');
+  if (!roleElem || !text) return;
+
+  roleElem.innerHTML = '';
+  const cursor = document.createElement('span');
+  cursor.className = 'typing-cursor';
+
+  let i = 0;
+  const speed = 40; // سرعت تایپ
+
+  function type() {
+    if (i < text.length) {
+      roleElem.textContent = text.slice(0, i + 1);
+      roleElem.appendChild(cursor);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+
+/* =========================================================
+   ۳. افکت سه‌بعدی Tilt روی کارت‌ها با حرکت موس
+   ========================================================= */
+function init3DTiltCards() {
+  const cards = document.querySelectorAll('.project-card, .profile-card');
+  
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = ((y - centerY) / centerY) * -7;
+      const rotateY = ((x - centerX) / centerX) * 7;
+      
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+    });
+  });
+}
+
+/* =========================================================
+   ۴. افکت کلیک موجی روی تمام دکمه‌ها (Ripple Effect)
+   ========================================================= */
+function initButtonRipples() {
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.btn');
+    if (!btn) return;
+
+    const circle = document.createElement('span');
+    const diameter = Math.max(btn.clientWidth, btn.clientHeight);
+    const radius = diameter / 2;
+    const rect = btn.getBoundingClientRect();
+
+    circle.style.width = circle.style.height = `${diameter}px`;
+    circle.style.left = `${e.clientX - rect.left - radius}px`;
+    circle.style.top = `${e.clientY - rect.top - radius}px`;
+    circle.classList.add('ripple-wave');
+
+    const ripple = btn.querySelector('.ripple-wave');
+    if (ripple) ripple.remove();
+
+    btn.appendChild(circle);
+    setTimeout(() => circle.remove(), 600);
+  });
+}
+
+/* =========================================================
+   اجرا هنگام لود صفحه
+   ========================================================= */
+window.addEventListener('DOMContentLoaded', () => {
+  animateSkillBarsAndNumbers();
+  init3DTiltCards();
+  initButtonRipples();
+});    
+  </script>
+</body>
+</html>
+
+
+  <script>
     "use strict";
 
     /* فقط این چهار مقدار را برای مخزن خودتان تنظیم کنید. */
     const CONFIG = {
       owner: "parsa7400",
-      repo: "   parsa7400.github.io",
+      repo: "parsa7400.github.io",
       branch: "main",
       path: "portfolio.json"
     };
@@ -578,7 +1001,7 @@
         projectsKicker: "نمونه‌کارها",
         projectsTitle: "پروژه‌های انجام‌شده",
         projectsSubtitle: "پروژه‌ها را جست‌وجو یا بر اساس دسته فیلتر کنید.",
-        searchPlaceholder: "جست‌وجو در نام، توضیح یا فناوری...",
+        searchPlaceholder: "جستجو درپروژه‌ها...",
         allProjects: "همه پروژه‌ها",
         noProjects: "پروژه‌ای مطابق جست‌وجو پیدا نشد.",
         noDescription: "توضیحی برای این پروژه ثبت نشده است.",
@@ -1012,16 +1435,21 @@
       tags.replaceChildren();
       (currentData.tags[currentLang] || []).filter(Boolean).forEach(tag => tags.append(make("span", "pill", tag)));
 
-      const skills = $("#skillsList");
       skills.replaceChildren();
       currentData.skills.forEach(skill => {
         const card = make("div", "skill");
         const title = make("div", "skill-title");
         title.append(make("span", "", pick(skill.name)));
-        title.append(make("b", "", Math.round(skill.level) + "%"));
+        
+        // --- تغییر از اینجا ---
+        const level = Math.round(skill.level);
+        title.append(make("b", "", "0%")); // شروع عدد از 0%
         const meter = make("div", "meter");
         const fill = make("span");
-        fill.style.width = Math.max(0, Math.min(100, skill.level)) + "%";
+        fill.style.width = "0%"; // شروع عرض نوار از 0%
+        fill.setAttribute("data-target", level); // ذخیره مقدار نهایی برای انیمیشن
+        // --- تا اینجا ---
+        
         meter.append(fill);
         card.append(title, meter);
         skills.append(card);
