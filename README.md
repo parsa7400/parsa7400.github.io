@@ -1,4 +1,3 @@
-
 <!-- ============================================================ -->
 <!-- PARSA7400 | PREMIUM DEVELOPER CENTER -->
 <!-- GitHub Repository Profile | English Edition -->
@@ -9,12 +8,12 @@
 <!-- بنر اصلی با اندازه فونت و ارتفاع کامپکت و سازگار با گوشی و مانیتور -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:050816,25:101B35,55:263B68,80:087F8C,100:00F5D4&text=PARSA7400&fontSize=38&fontColor=FFFFFF&fontAlignY=36&desc=SOFTWARE%20DEVELOPER%20%7C%20WEB%20ENGINEER&descSize=12&descAlignY=60&animation=fadeIn&stroke=00F5D4&strokeWidth=1" alt="Header Banner"/>
 
-<!-- تایپینگ با عرض استاندارد موبایل (360px) که در گوشی کات نمی‌شود و در کامپیوتر هم شیک وسط‌چین می‌ماند -->
+<!-- تایپینگ با عرض استاندارد موبایل (360px) بدون بیرون‌زدگی در نمایشگر موبایل -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&repeat=true&width=360&height=45&lines=ENGINEERING+DIGITAL+EXPERIENCES;BUILDING+INTELLIGENT+WEB+SYSTEMS;DEVELOPING+AUTOMATION+AND+APIs;TURNING+IDEAS+INTO+REAL+SOFTWARE;ALWAYS+BUILDING.+ALWAYS+IMPROVING." alt="Developer Introduction"/>
 
 <br>
 
-<!-- بج‌های مشخصات: هر ۲ تا در یک خط با فاصله تمیز -->
+<!-- بج‌های مشخصات: دو ردیف دوتایی متقارن -->
 <p align="center">
   <img src="https://img.shields.io/badge/DEVELOPMENT-ACTIVE-00D68F?style=flat-square&labelColor=080D18" alt="Active"/>
   <img src="https://img.shields.io/badge/FOCUS-FULL_STACK-00C2FF?style=flat-square&labelColor=080D18" alt="Full Stack"/>
@@ -23,11 +22,15 @@
   <img src="https://img.shields.io/badge/PLATFORM-GITHUB-FFFFFF?style=flat-square&logo=github&logoColor=black&labelColor=080D18" alt="GitHub"/>
 </p>
 
-<!-- دکمه‌های اکشن: استایل مدرن و بدون بیرون‌زدگی در نمایشگر موبایل -->
+<!-- دکمه‌های اکشن: چینش ۲ در ۲ کامپکت برای واکنش‌گرایی ایده‌آل روی موبایل و دسکتاپ -->
 <p align="center">
   <a href="https://parsa7400.github.io">
-    <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-00F5D4?style=for-the-badge&logoColor=black&labelColor=080D18" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-00F5D4?style=for-the-badge&logoColor=black&labelColor=080D18" alt="Portfolio"/>
   </a>
+  <a href="https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json">
+    <img src="https://img.shields.io/badge/%F0%9F%97%84%EF%B8%8F_PORTFOLIO_DATA-FFA116?style=for-the-badge&logoColor=black&labelColor=080D18" alt="Portfolio Data"/>
+  </a>
+  <br>
   <a href="https://github.com/parsa7400/parsa7400.github.io/blob/main/index.html">
     <img src="https://img.shields.io/badge/%F0%9F%92%BB_SOURCE_CODE-FFFFFF?style=for-the-badge&labelColor=080D18" alt="Source"/>
   </a>
@@ -43,6 +46,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:00F5D4,50:536DFE,100:9B72F2" alt="Divider"/>
 
 </div>
+
 
 ---
 
