@@ -12,7 +12,7 @@
 <p align="center">
   🌐 <a href="https://parsa7400.github.io"><b>مشاهده زنده وب‌سایت (Live Demo)</b></a> • 
   🏗️ <a href="#-ساختار-مخزن-repository-architecture"><b>معماری پروژه</b></a> • 
-  🔐 <a href="#-قابلیت‌های-پنل-ادمین-admin-panel-capabilities"><b>پنل ادمین</b></a>
+  🔐 <a href="https://parsa7400.github.io/?admin=1"><b>پنل ادمین</b></a>
 </p>
 
 ---
