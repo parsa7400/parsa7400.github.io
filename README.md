@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://parsa7400.github.io"><b>🌐 Explore Live Demo</b></a> •
   <a href="#-core-architecture"><b>🏗️ Architecture</b></a> •
-  <a href="#-admin-panel-capabilities"><b>🔐 Admin Panel</b></a>
+  <a href="/?admin=1"><b>🔐 Admin Panel</b></a>
 </p>
 
 ---
