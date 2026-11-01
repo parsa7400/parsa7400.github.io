@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://media.giphy.com/media/LmN8OYiChUwwg/giphy.gif" width="40" alt="Code Animation" />
-  <img src="https://media.giphy.com/media/unQ3IJU2RG7DO/giphy.gif" width="40" alt="Terminal" />
-  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="40" alt="Rocket" />
-</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1100&color=00F5D4&center=true&vCenter=true&width=820&height=70&lines=%E2%9A%A1+%40parsa7400+%7C+Next-Gen+Developer+Center;%F0%9F%A4%96+Automated+Systems+%26+Cloud+Architecture;%F0%9F%9B%A0%EF%B8%8F+Full-Stack+Vanilla+JS+%2B+GitHub+REST+API;%F0%9F%94%A5+Dynamic+Portfolio+%26+Live+CMS+Controller" alt="Dynamic Typing Banner" />
