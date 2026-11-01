@@ -1,0 +1,132 @@
+{
+  "name": {
+    "fa": "parsa7400",
+    "en": "parsa7400"
+  },
+  "role": {
+    "fa": "توسعه‌دهنده نرم‌افزار و راهکارهای خودکار",
+    "en": "Software developer and automation builder"
+  },
+  "bio": {
+    "fa": "علاقه‌مند به توسعه ابزارهای خودکار، بات‌ها و سیستم‌های سبک.",
+    "en": "Interested in automation tools, bots and lightweight systems."
+  },
+  "about": {
+    "fa": "سلام! اینجا می‌توانید با مهارت‌ها و پروژه‌های من آشنا شوید.",
+    "en": "Hello! Explore my skills and projects here."
+  },
+  "availability": {
+    "fa": "در دسترس برای پروژه‌های جدید",
+    "en": "Available for new projects"
+  },
+  "footer": {
+    "fa": "parsa7400 — تمامی حقوق محفوظ است.",
+    "en": "parsa7400 — All rights reserved."
+  },
+  "tags": {
+    "fa": [
+      "Python",
+      "بات‌ها",
+      "SQLite",
+      "وب"
+    ],
+    "en": [
+      "Python",
+      "Bots",
+      "SQLite",
+      "Web"
+    ]
+  },
+  "email": "",
+  "avatarUrl": "",
+  "theme": {
+    "accent": "#5100ff",
+    "accent2": "#20c997"
+  },
+  "skills": [
+    {
+      "id": "skill-python",
+      "name": {
+        "fa": "Python",
+        "en": "Python"
+      },
+      "level": 92
+    },
+    {
+      "id": "skill-sqlite",
+      "name": {
+        "fa": "SQLite / WAL",
+        "en": "SQLite / WAL"
+      },
+      "level": 88
+    },
+    {
+      "id": "skill-bots",
+      "name": {
+        "fa": "API بات‌ها",
+        "en": "Bot APIs"
+      },
+      "level": 95
+    }
+  ],
+  "socials": [],
+  "projects": [],
+  "ui": {
+    "fa": {
+      "navAbout": "درباره من",
+      "navSkills": "مهارت‌ها",
+      "navProjects": "پروژه‌ها",
+      "navContact": "ارتباط",
+      "navAdmin": "⚙ پنل مدیریت",
+      "hello": "سلام، من",
+      "heroProjects": "مشاهده پروژه‌ها ↓",
+      "heroContact": "تماس با من",
+      "aboutKicker": "درباره",
+      "aboutTitle": "داستان و تمرکز کاری من",
+      "skillsKicker": "تخصص‌ها",
+      "skillsTitle": "فناوری‌ها و مهارت‌ها",
+      "skillsSubtitle": "ابزارها و فناوری‌هایی که با آن‌ها کار می‌کنم.",
+      "projectsKicker": "نمونه‌کارها",
+      "projectsTitle": "پروژه‌های انجام‌شده",
+      "projectsSubtitle": "پروژه‌ها را جست‌وجو یا بر اساس دسته فیلتر کنید.",
+      "searchPlaceholder": "جستجو درپروژه‌ها...",
+      "allProjects": "همه پروژه‌ها",
+      "noProjects": "پروژه‌ای مطابق جست‌وجو پیدا نشد.",
+      "noDescription": "توضیحی برای این پروژه ثبت نشده است.",
+      "demoLink": "مشاهده دمو ↗",
+      "sourceLink": "مشاهده کد ↗",
+      "contactKicker": "همکاری",
+      "contactTitle": "پروژه‌ای در ذهن دارید؟",
+      "contactSubtitle": "برای گفت‌وگو درباره ایده‌ها و همکاری در تماس باشید.",
+      "emailLink": "ارسال ایمیل ↗"
+    },
+    "en": {
+      "navAbout": "About",
+      "navSkills": "Skills",
+      "navProjects": "Projects",
+      "navContact": "Contact",
+      "navAdmin": "⚙ Admin",
+      "hello": "Hi, I'm",
+      "heroProjects": "View projects ↓",
+      "heroContact": "Contact me",
+      "aboutKicker": "ABOUT",
+      "aboutTitle": "What I do",
+      "skillsKicker": "EXPERTISE",
+      "skillsTitle": "Technologies and skills",
+      "skillsSubtitle": "Tools and technologies I work with.",
+      "projectsKicker": "PORTFOLIO",
+      "projectsTitle": "Selected projects",
+      "projectsSubtitle": "Search projects or filter by category.",
+      "searchPlaceholder": "Search names, descriptions or technologies...",
+      "allProjects": "All projects",
+      "noProjects": "No projects match your search.",
+      "noDescription": "No description has been added yet.",
+      "demoLink": "Live demo ↗",
+      "sourceLink": "Source code ↗",
+      "contactKicker": "LET'S CONNECT",
+      "contactTitle": "Have a project in mind?",
+      "contactSubtitle": "Get in touch to discuss ideas and collaboration.",
+      "emailLink": "Send email ↗"
+    }
+  }
+}
