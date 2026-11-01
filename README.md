@@ -39,7 +39,7 @@
 
 ---
 
-## ⚡ درباره پروژه (Overview)
+## <img src="https://media.giphy.com/media/LmN8OYiChUwwg/giphy.gif" width="26" /> درباره پروژه (Overview)
 
 پورتفولیوی شخصی **`parsa7400`**؛ یک سامانه سبک، فوق‌العاده سریع و مدرن که بدون نیاز به فریم‌ورک‌های سنگین (React/Vue) و به صورت **Pure Vanilla JS** توسعه داده شده است. 
 
@@ -47,30 +47,30 @@
 
 ---
 
-## 🛠️ قابلیت‌های پنل مدیریت (Admin Features)
+## <img src="https://media.giphy.com/media/unQ3IJU2RG7DO/giphy.gif" width="26" /> قابلیت‌های پنل مدیریت (Admin Features)
 
 > سیستم CMS داخلی سایت به کمک توکن‌های امنیتی گیت‌هاب (`Fine-grained PAT`) مدیریت می‌شود.
 
 | بخش | توضیحات عملکردی |
 | :--- | :--- |
-| 👤 **پروفایل و بیو** | مدیریت و ویرایش لحظه‌ای نام، عنوان شغلی و متن‌های درباره من |
-| 📊 **بخش مهارت‌ها** | افزودن، ویرایش و حذف مهارت‌ها به همراه کنترل پویای درصدها |
-| 🚀 **مدیریت پروژه‌ها** | کنترل کارت‌های پروژه، لینک‌ها، توضیحات و تک‌تک تگ‌های تکنولوژی |
-| 🌐 **سیستم چندزبانه** | سوئیچ و مدیریت آنی متون بین فارسی و انگلیسی در کل ساختار سایت |
-| 💾 **همگام‌سازی گیت‌هاب** | ذخیره خودکار تغییرات در فایل `portfolio.json` با بررسی SHA |
+| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Technologist.png" width="22" /> **پروفایل و بیو** | مدیریت و ویرایش لحظه‌ای نام، عنوان شغلی و متن‌های درباره من |
+| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="22" /> **بخش مهارت‌ها** | افزودن، ویرایش و حذف مهارت‌ها به همراه کنترل پویای درصدها |
+| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="22" /> **مدیریت پروژه‌ها** | کنترل کارت‌های پروژه، لینک‌ها، توضیحات و تک‌تک تگ‌های تکنولوژی |
+| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png" width="22" /> **سیستم چندزبانه** | سوئیچ و مدیریت آنی متون بین فارسی و انگلیسی در کل ساختار سایت |
+| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Floppy%20Disk.png" width="22" /> **همگام‌سازی گیت‌هاب** | ذخیره خودکار تغییرات در فایل `portfolio.json` با بررسی SHA |
 
 ---
 
-## ✨ ویژگی‌های فنی و بصری (Tech & UI)
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Glowing%20Star.png" width="26" /> ویژگی‌های فنی و بصری (Tech & UI)
 
-- **انیمیشن‌های شمارش و مترها:** لود شدن همزمان اعداد و نوارها به محض اسکرول (`IntersectionObserver`)
-- **کارت‌های سه‌بعدی:** افکت تعاملی Tilt با حرکت ماوس روی کارت‌ها
-- **افکت موج‌دار:** بازخورد کلیک مدرن روی دکمه‌ها و المان‌ها
-- **معماری تک‌فایلی بهینه:** سرعت لود نزدیک به صفر با ساختار کاملاً مدرن
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="20" /> **انیمیشن‌های شمارش و مترها:** لود شدن همزمان اعداد و نوارها به محض اسکرول (`IntersectionObserver`)
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Sparkles.png" width="20" /> **کارت‌های سه‌بعدی:** افکت تعاملی Tilt با حرکت ماوس روی کارت‌ها
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/High%20Voltage.png" width="20" /> **افکت موج‌دار:** بازخورد کلیک مدرن روی دکمه‌ها و المان‌ها
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gem%20Stone.png" width="20" /> **معماری تک‌فایلی بهینه:** سرعت لود نزدیک به صفر با ساختار کاملاً مدرن
 
 ---
 
-## 📁 ساختار مخزن (Repository Structure)
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png" width="26" /> ساختار مخزن (Repository Structure)
 ```text
 parsa7400.github.io/
 ├── 📄 index.html          # هسته اصلی فرانت‌اند، پنل ادمین و استایل‌ها
