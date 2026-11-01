@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00FF66&center=true&vCenter=true&width=600&height=60&lines=⚡+PARSA+BASIRIAN+%E2%80%A2+PARSA7400;🚀+Developer+Center+%26+Portfolio;🔥+Powered+by+GitHub+REST+API" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FF66&center=true&vCenter=true&width=650&height=60&lines=⚡+PARSA+BASIRIAN+%E2%80%A2+PARSA7400;🚀+Developer+Center+%26+Portfolio+Manager;🔥+Powered+by+GitHub+REST+API+%26+Vanilla+JS" alt="Animated Typing Banner" />
 </p>
 
-<div align="center">
-
-[![GitHub Pages](https://img.shields.io/badge/STATUS-ONLINE_%F0%9F%94%A5-00ff66?style=for-the-badge&logo=githubpages&logoColor=black)](https://parsa7400.github.io)
-[![GitHub API](https://img.shields.io/badge/BACKEND-GITHUB_API-1f427f?style=for-the-badge&logo=github&logoColor=white)](https://docs.github.com/en/rest)
-[![Author](https://img.shields.io/badge/DEVELOPER-PARSA7400-blueviolet?style=for-the-badge&logo=github)](https://github.com/parsa7400)
-[![License](https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge)](LICENSE)
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-ONLINE%20%F0%9F%94%A5-00ff66?style=for-the-badge&logo=githubpages&logoColor=black" />
+  <img src="https://img.shields.io/badge/BACKEND-GITHUB%20API-1f427f?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/DEVELOPER-PARSA7400-blueviolet?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge" />
+</p>
 
 <p align="center">
   <a href="https://parsa7400.github.io"><b>🌐 Explore Live Demo</b></a> •
@@ -15,19 +15,17 @@
   <a href="#-admin-panel-capabilities"><b>🔐 Admin Panel</b></a>
 </p>
 
-</div>
-
 ---
 
 ## 🎯 نمای کلی پروژه (Overview)
 
-پروژه **Developer Center** پورتفولیوی شخصی و حرفه‌ای **`parsa7400`** است؛ یک سیستم فوق‌العاده سریع، واکنش‌گرا و تعاملی که مرز بین فرانت‌اند مدرن و ابزارهای توسعه‌دهنده را جابجا کرده است. ویژگی کلیدی این پلتفرم، مجهز بودن به یک **پنل مدیریت داخلی امن** است که بدون نیاز به سرور یا دیتابیس مجزا، مستقیماً از طریق **GitHub Contents API** تغییرات را روی مخزن اعمال می‌کند.
+پروژه **Developer Center** پورتفولیوی شخصی و پیشرفته **`parsa7400`** است؛ سیستمی فوق‌العاده سریع، مدرن و واکنش‌گرا که مرز بین فرانت‌اند خالص و ابزارهای مدیریت محتوا را دگرگون کرده است. ویژگی منحصربه‌فرد این پلتفرم، مجهز بودن به یک **پنل مدیریت داخلی امن** است که تغییرات را مستقیماً از طریق **GitHub Contents API** روی مخزن اعمال می‌کند.
 
 ---
 
 ## 🔐 قابلیت‌های پنل ادمین (Admin Panel Capabilities)
 
-> سیستم مدیریت محتوا کاملاً درون‌برنامه (In-App) تعبیه شده است و با توکن‌های امنیتی گیت‌هاب (`Fine-grained PAT`) توسط **`parsa7400`** مدیریت می‌شود.
+> سیستم مدیریت محتوا کاملاً درون‌برنامه تعبیه شده است و با توکن‌های امنیتی گیت‌هاب (`Fine-grained PAT`) توسط **`parsa7400`** مدیریت می‌شود.
 
 | بخش قابل مدیریت | قابلیت‌ها و جزئیات فنی |
 | :--- | :--- |
