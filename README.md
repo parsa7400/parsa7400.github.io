@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FF66&center=true&vCenter=true&width=700&height=60&lines=⚡+PARSA+BASIRIAN+%E2%80%A2+PARSA7400;🚀+Developer+Center+%26+Dynamic+Portfolio;🔥+Powered+by+GitHub+REST+API+%26+Vanilla+JS" alt="Animated Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FF66&center=true&vCenter=true&width=750&height=70&lines=%E2%9A%A1+PARSA+BASIRIAN+%E2%80%A2+PARSA7400;%F0%9F%9A%80+Developer+Center+%26+Dynamic+Portfolio;%F0%9F%94%A5+Powered+by+GitHub+REST+API+%26+Vanilla+JS" alt="Animated Typing Banner" />
 </p>
 
 <p align="center">
@@ -14,6 +14,7 @@
   🏗️ <a href="https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json"><b>معماری پروژه</b></a> • 
   🔐 <a href="https://parsa7400.github.io/?admin=1"><b>پنل ادمین</b></a>
 </p>
+
 
 ---
 
