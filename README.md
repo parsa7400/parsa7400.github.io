@@ -6,42 +6,41 @@
 
 <div align="center">
 
-<img width="100%" style="max-width: 100%; height: auto;" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050816,25:101B35,55:263B68,80:087F8C,100:00F5D4&text=PARSA7400&fontSize=52&fontColor=FFFFFF&fontAlignY=38&desc=SOFTWARE%20DEVELOPER%20%2F%20WEB%20ENGINEER&descSize=15&descAlignY=60&animation=fadeIn&stroke=00F5D4&strokeWidth=1" alt="Header Banner"/>
+<!-- بنر اصلی با اندازه فونت و ارتفاع کامپکت و سازگار با گوشی و مانیتور -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:050816,25:101B35,55:263B68,80:087F8C,100:00F5D4&text=PARSA7400&fontSize=38&fontColor=FFFFFF&fontAlignY=36&desc=SOFTWARE%20DEVELOPER%20%7C%20WEB%20ENGINEER&descSize=12&descAlignY=60&animation=fadeIn&stroke=00F5D4&strokeWidth=1" alt="Header Banner"/>
+
+<!-- تایپینگ با عرض استاندارد موبایل (360px) که در گوشی کات نمی‌شود و در کامپیوتر هم شیک وسط‌چین می‌ماند -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&repeat=true&width=360&height=45&lines=ENGINEERING+DIGITAL+EXPERIENCES;BUILDING+INTELLIGENT+WEB+SYSTEMS;DEVELOPING+AUTOMATION+AND+APIs;TURNING+IDEAS+INTO+REAL+SOFTWARE;ALWAYS+BUILDING.+ALWAYS+IMPROVING." alt="Developer Introduction"/>
 
 <br>
 
-<img width="100%" style="max-width: 750px; height: auto;" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=900&color=00F5D4&center=true&vCenter=true&repeat=true&width=750&height=55&lines=ENGINEERING+DIGITAL+EXPERIENCES;BUILDING+INTELLIGENT+WEB+SYSTEMS;DEVELOPING+AUTOMATION+AND+APIs;TURNING+IDEAS+INTO+REAL+SOFTWARE;ALWAYS+BUILDING.+ALWAYS+IMPROVING." alt="Developer Introduction"/>
-
-<br><br>
-
+<!-- بج‌های مشخصات: هر ۲ تا در یک خط با فاصله تمیز -->
 <p align="center">
-  <img src="https://img.shields.io/badge/DEVELOPMENT-ACTIVE-00D68F?style=for-the-badge&labelColor=080D18" alt="Active"/>
-  <img src="https://img.shields.io/badge/FOCUS-FULL_STACK-00C2FF?style=for-the-badge&labelColor=080D18" alt="Full Stack"/>
-  <img src="https://img.shields.io/badge/OWNER-PARSA7400-9B72F2?style=for-the-badge&labelColor=080D18" alt="Owner"/>
-  <img src="https://img.shields.io/badge/PLATFORM-GITHUB-FFFFFF?style=for-the-badge&logo=github&logoColor=black&labelColor=080D18" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/DEVELOPMENT-ACTIVE-00D68F?style=flat-square&labelColor=080D18" alt="Active"/>
+  <img src="https://img.shields.io/badge/FOCUS-FULL_STACK-00C2FF?style=flat-square&labelColor=080D18" alt="Full Stack"/>
+  <br>
+  <img src="https://img.shields.io/badge/OWNER-PARSA7400-9B72F2?style=flat-square&labelColor=080D18" alt="Owner"/>
+  <img src="https://img.shields.io/badge/PLATFORM-GITHUB-FFFFFF?style=flat-square&logo=github&logoColor=black&labelColor=080D18" alt="GitHub"/>
 </p>
 
-<br>
-
+<!-- دکمه‌های اکشن: استایل مدرن و بدون بیرون‌زدگی در نمایشگر موبایل -->
 <p align="center">
   <a href="https://parsa7400.github.io">
-    <img src="https://img.shields.io/badge/EXPLORE_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black&labelColor=080D18" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-00F5D4?style=for-the-badge&logoColor=black&labelColor=080D18" alt="Portfolio"/>
   </a>
   <a href="https://github.com/parsa7400/parsa7400.github.io">
-    <img src="https://img.shields.io/badge/VIEW_SOURCE_CODE-FFFFFF?style=for-the-badge&logo=github&logoColor=white&labelColor=080D18" alt="Source"/>
+    <img src="https://img.shields.io/badge/%F0%9F%92%BB_SOURCE_CODE-FFFFFF?style=for-the-badge&labelColor=080D18" alt="Source"/>
   </a>
   <a href="https://parsa7400.github.io/?admin=1">
-    <img src="https://img.shields.io/badge/ADMINISTRATION_PANEL-9B72F2?style=for-the-badge&logo=probot&logoColor=white&labelColor=080D18" alt="Admin"/>
+    <img src="https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_ADMIN_PANEL-9B72F2?style=for-the-badge&labelColor=080D18" alt="Admin"/>
   </a>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=parsa7400&style=flat-square&color=00F5D4&label=PROFILE+VIEWS" alt="Visitors"/>
+</p>
 
-<img src="https://komarev.com/ghpvc/?username=parsa7400&style=for-the-badge&color=00F5D4&label=PROFILE+VISITORS" alt="Visitors"/>
-
-<br><br>
-
-<img width="100%" style="max-width: 100%; height: 2px;" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:00F5D4,50:536DFE,100:9B72F2" alt="Divider"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:00F5D4,50:536DFE,100:9B72F2" alt="Divider"/>
 
 </div>
 
