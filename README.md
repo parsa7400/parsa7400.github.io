@@ -11,7 +11,7 @@
 
 <p align="center">
   🌐 <a href="https://parsa7400.github.io"><b>مشاهده زنده وب‌سایت (Live Demo)</b></a> • 
-  🏗️ <a href="#-ساختار-مخزن-repository-architecture"><b>معماری پروژه</b></a> • 
+  🏗️ <a href="https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json"><b>معماری پروژه</b></a> • 
   🔐 <a href="https://parsa7400.github.io/?admin=1"><b>پنل ادمین</b></a>
 </p>
 
