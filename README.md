@@ -28,7 +28,7 @@
   <a href="https://parsa7400.github.io">
     <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-00F5D4?style=for-the-badge&logoColor=black&labelColor=080D18" alt="Portfolio"/>
   </a>
-  <a href="https://github.com/parsa7400/parsa7400.github.io">
+  <a href="[https://github.com/parsa7400/parsa7400.github.io](https://github.com/parsa7400/parsa7400.github.io/blob/main/index.html)">
     <img src="https://img.shields.io/badge/%F0%9F%92%BB_SOURCE_CODE-FFFFFF?style=for-the-badge&labelColor=080D18" alt="Source"/>
   </a>
   <a href="https://parsa7400.github.io/?admin=1">
