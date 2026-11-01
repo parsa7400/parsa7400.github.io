@@ -1,190 +1,172 @@
 
-<!-- ============================================================ -->
-<!-- PARSA7400 | PREMIUM DEVELOPER CENTER -->
-<!-- GitHub Repository Profile | English Edition -->
-<!-- ============================================================ -->
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:050816,25:101B35,55:263B68,80:087F8C,100:00F5D4&text=PARSA7400&fontSize=68&fontColor=FFFFFF&fontAlignY=38&desc=SOFTWARE%20DEVELOPER%20%2F%20WEB%20ENGINEER&descSize=17&descAlignY=59&animation=fadeIn&stroke=00F5D4&strokeWidth=1"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050816,25:101B35,55:263B68,80:087F8C,100:00F5D4&text=PARSA7400&fontSize=58&fontColor=FFFFFF&fontAlignY=38&desc=SOFTWARE%20DEVELOPER%20%2F%20WEB%20ENGINEER&descSize=13&descAlignY=60&animation=fadeIn"/>
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=3000&pause=900&color=00F5D4&center=true&vCenter=true&repeat=true&width=850&height=65&lines=ENGINEERING+DIGITAL+EXPERIENCES;BUILDING+INTELLIGENT+WEB+SYSTEMS;DEVELOPING+AUTOMATION+AND+APIs;TURNING+IDEAS+INTO+REAL+SOFTWARE;ALWAYS+BUILDING.+ALWAYS+IMPROVING." alt="Developer Introduction"/>
+<img width="100%" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=3000&pause=900&color=00F5D4&center=true&vCenter=true&repeat=true&width=600&height=65&lines=ENGINEERING+DIGITAL+EXPERIENCES;BUILDING+INTELLIGENT+WEB+SYSTEMS;DEVELOPING+AUTOMATION+AND+APIs;TURNING+IDEAS+INTO+REAL+SOFTWARE"/>
 
-<br><br>
+<br>
 
-<img src="https://img.shields.io/badge/DEVELOPMENT-ACTIVE-00D68F?style=for-the-badge&labelColor=080D18">
-<img src="https://img.shields.io/badge/FOCUS-FULL_STACK-00C2FF?style=for-the-badge&labelColor=080D18">
-<img src="https://img.shields.io/badge/OWNER-PARSA7400-9B72F2?style=for-the-badge&labelColor=080D18">
-<img src="https://img.shields.io/badge/PLATFORM-GITHUB-FFFFFF?style=for-the-badge&logo=github&logoColor=black&labelColor=080D18">
+<img src="https://img.shields.io/badge/DEVELOPMENT-ACTIVE-00D68F?style=flat-square&labelColor=080D18"/>
+<img src="https://img.shields.io/badge/FOCUS-FULL_STACK-00C2FF?style=flat-square&labelColor=080D18"/>
 
-<br><br>
+<br>
 
 <a href="https://parsa7400.github.io">
-<img src="https://img.shields.io/badge/EXPLORE_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black&labelColor=080D18">
+<img src="https://img.shields.io/badge/EXPLORE_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black&labelColor=080D18"/>
 </a>
+
 <a href="https://github.com/parsa7400/parsa7400.github.io">
-<img src="https://img.shields.io/badge/VIEW_SOURCE_CODE-FFFFFF?style=for-the-badge&logo=github&logoColor=white&labelColor=080D18">
+<img src="https://img.shields.io/badge/SOURCE_CODE-FFFFFF?style=for-the-badge&logo=github&logoColor=black&labelColor=080D18"/>
 </a>
+
+<br><br>
+
 <a href="https://parsa7400.github.io/?admin=1">
-<img src="https://img.shields.io/badge/ADMINISTRATION_PANEL-9B72F2?style=for-the-badge&logo=probot&logoColor=white&labelColor=080D18">
+<img src="https://img.shields.io/badge/ADMIN_PANEL-9B72F2?style=for-the-badge&logo=probot&logoColor=white&labelColor=080D18"/>
 </a>
 
 <br><br>
 
-<img src="https://komarev.com/ghpvc/?username=parsa7400&style=for-the-badge&color=00F5D4&label=PROFILE+VISITORS">
-
-<br><br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:00F5D4,50:536DFE,100:9B72F2">
+<img src="https://komarev.com/ghpvc/?username=parsa7400&style=flat-square&color=00F5D4&label=PROFILE+VISITORS"/>
 
 </div>
 
 ---
 
-## 01. PROJECT OVERVIEW
+# 01. PROJECT OVERVIEW
 
-**Parsa7400 Developer Center** is a modern, performance-oriented personal developer portfolio designed to showcase software engineering projects, technical capabilities, development activities, and digital products.
+**Parsa7400 Developer Center** is a modern personal developer portfolio built to present software projects, technical skills, development activities, and digital products.
 
-The platform is built around a lightweight architecture using **HTML5, CSS3, and Pure Vanilla JavaScript**, without depending on heavyweight frontend frameworks.
+The platform uses a lightweight architecture based on:
 
-Beyond a conventional portfolio, the project incorporates a dedicated content management environment that allows portfolio information to be managed through an administrative interface and synchronized with GitHub using the **GitHub REST API**.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- JSON
+- GitHub REST API
 
-### Engineering Principles
+It also includes an administration interface for managing portfolio content and integrating repository data.
+
+## Engineering Principles
 
 | Principle | Implementation |
 |:---|:---|
-| Performance | Lightweight frontend architecture |
-| Maintainability | Structured and organized source code |
-| Scalability | JSON-based content management |
-| Accessibility | Responsive and semantic interface |
-| Integration | GitHub REST API connectivity |
-| User Experience | Interactive UI and visual feedback |
-| Internationalization | Persian and English support |
+| Performance | Lightweight architecture |
+| Maintainability | Organized source code |
+| Scalability | JSON-based data |
+| Accessibility | Responsive interface |
+| Integration | GitHub REST API |
+| Experience | Interactive UI |
+| Localization | Persian and English |
 
 <div align="center">
 
-<img width="88%" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Software Engineering Animation">
+<img width="100%" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Software Engineering"/>
 
-<br>
-
-**DESIGN WITH PURPOSE. ENGINEER WITH PRECISION. BUILD WITHOUT LIMITS.**
+**DESIGN WITH PURPOSE. ENGINEER WITH PRECISION.**
 
 </div>
 
 ---
 
-## 02. PLATFORM CAPABILITIES
+# 02. PLATFORM CAPABILITIES
 
-<div align="center">
+## Interface Engineering
 
-<img src="https://img.shields.io/badge/01-USER_INTERFACE-00F5D4?style=flat-square&labelColor=080D18">
-<img src="https://img.shields.io/badge/02-CONTENT_MANAGEMENT-8B5CF6?style=flat-square&labelColor=080D18">
-<img src="https://img.shields.io/badge/03-API_INTEGRATION-00A8FF?style=flat-square&labelColor=080D18">
-<img src="https://img.shields.io/badge/04-DATA_ARCHITECTURE-FF4D9D?style=flat-square&labelColor=080D18">
-
-</div>
-
-### 2.1 Interface Engineering
-
-- Modern, responsive user interface.
-- Dark and light appearance modes.
-- Interactive three-dimensional card effects.
+- Responsive user interface.
+- Dark and light themes.
+- Interactive 3D card effects.
 - Smooth transitions and micro-interactions.
-- Ripple-based interaction feedback.
-- Animated counters and progress indicators.
-- IntersectionObserver-based viewport animations.
-- Responsive layouts for mobile, tablet, and desktop.
+- Ripple interaction feedback.
+- Animated counters and indicators.
+- IntersectionObserver-based animations.
+- Mobile, tablet, and desktop layouts.
 
-### 2.2 Content Management System
+## Content Management
 
-- Dedicated administration dashboard.
-- Dynamic profile management.
+- Integrated administration dashboard.
+- Profile information management.
 - Skill creation, editing, and deletion.
-- Project and portfolio management.
-- Social and external link management.
-- Structured content editing.
+- Project management.
+- Social link management.
 - GitHub repository synchronization.
 - SHA-based file version verification.
 
-### 2.3 Internationalization
+## Internationalization
 
 - Persian language support.
 - English language support.
-- Right-to-left and left-to-right layouts.
+- RTL and LTR layouts.
 - Language-aware interface rendering.
-- Localized content organization.
 
-### 2.4 Data and Integration
+## Data Integration
 
 - JSON-based portfolio storage.
-- GitHub Contents API integration.
+- GitHub Contents API.
 - Repository file management.
-- Version-aware content updates.
+- Version-aware updates.
 - Structured data loading.
-- Client-side interaction management.
 
 ---
 
-## 03. TECHNOLOGY STACK
+# 03. TECHNOLOGY STACK
 
 <div align="center">
 
-### Core Technologies
-
-<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark&perline=6" alt="Core Technology Stack">
+<img width="100%" src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark&perline=3" alt="Technology Stack"/>
 
 <br><br>
 
-### Development Environment
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white">
+<br>
+
+<img src="https://img.shields.io/badge/GIT-F05032?style=flat-square&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-181717?style=flat-square&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white"/>
 
 </div>
 
-| Technology | Engineering Role |
+| Technology | Role |
 |:---|:---|
-| HTML5 | Semantic document structure |
-| CSS3 | Layout, styling, animations, and responsive design |
-| JavaScript | Application logic and interactive functionality |
-| Git | Source control and version management |
-| GitHub REST API | Repository communication and file operations |
-| JSON | Structured portfolio data |
-| GitHub Pages | Static website hosting |
+| HTML5 | Document structure |
+| CSS3 | Styling and animations |
+| JavaScript | Application logic |
+| Git | Version control |
+| GitHub REST API | Repository integration |
+| JSON | Structured data |
+| GitHub Pages | Website hosting |
 
 ---
 
-## 04. SYSTEM ARCHITECTURE
+# 04. SYSTEM ARCHITECTURE
 
-The repository follows a lightweight frontend architecture with a structured data layer and an integrated administrative interface.
+<details>
+<summary><strong>View complete architecture</strong></summary>
 
 ```text
 PARSA7400.DEVELOPER.CENTER
 │
 ├── PRESENTATION LAYER
-│   │
-│   ├── Main Portfolio Interface
-│   ├── Responsive Layout System
+│   ├── Portfolio Interface
+│   ├── Responsive Layout
 │   ├── Theme Management
 │   ├── Language Management
 │   └── Animation Engine
 │
 ├── APPLICATION LAYER
-│   │
-│   ├── JavaScript Application Logic
+│   ├── JavaScript Logic
 │   ├── Interactive Components
 │   ├── Content Rendering
 │   ├── Admin Dashboard
 │   └── API Communication
 │
 ├── DATA LAYER
-│   │
 │   ├── portfolio.json
 │   ├── Profile Information
 │   ├── Skills Collection
@@ -192,76 +174,73 @@ PARSA7400.DEVELOPER.CENTER
 │   └── Social Links
 │
 └── INTEGRATION LAYER
-    │
     ├── GitHub REST API
     ├── Contents Endpoint
     ├── SHA Verification
     └── Repository Synchronization
 ```
 
-### Repository Structure
+</details>
+
+## Repository Structure
 
 ```text
 parsa7400.github.io/
 │
 ├── index.html
-│   └── Main application, styling, scripts and admin interface
-│
 ├── portfolio.json
-│   └── Structured portfolio data
-│
 └── README.md
-    └── Project documentation
 ```
+
+| File | Description |
+|:---|:---|
+| `index.html` | Main application and admin interface |
+| `portfolio.json` | Structured portfolio information |
+| `README.md` | Project documentation |
 
 ---
 
-## 05. ADMINISTRATION ENVIRONMENT
+# 05. ADMINISTRATION ENVIRONMENT
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/ADMIN_SYSTEM-INTEGRATED-8B5CF6?style=for-the-badge&labelColor=080D18">
-<img src="https://img.shields.io/badge/INTEGRATION-GITHUB_API-00F5D4?style=for-the-badge&labelColor=080D18">
+<img src="https://img.shields.io/badge/ADMIN_SYSTEM-INTEGRATED-9B72F2?style=for-the-badge&labelColor=080D18"/>
 
-</div>
-
-The integrated administration environment provides a centralized interface for managing portfolio information.
-
-### Management Modules
-
-| Module | Available Operations |
-|:---|:---|
-| Profile Management | Edit personal information and biography |
-| Skills Management | Create, update, and remove skills |
-| Project Management | Manage projects, descriptions, and URLs |
-| Language Management | Organize multilingual content |
-| Repository Integration | Synchronize data with GitHub |
-| SHA Verification | Validate repository file versions |
-| Content Management | Maintain portfolio information |
-
-### Administration Access
-
-<div align="center">
+<br><br>
 
 <a href="https://parsa7400.github.io/?admin=1">
-<img src="https://img.shields.io/badge/ACCESS_ADMINISTRATION_DASHBOARD-OPEN_PANEL-9B72F2?style=for-the-badge&labelColor=080D18">
+<img width="100%" src="https://img.shields.io/badge/OPEN_ADMINISTRATION_DASHBOARD-ACCESS_PANEL-9B72F2?style=for-the-badge&labelColor=080D18"/>
 </a>
 
 </div>
 
-**Production endpoint**
+The administration environment provides a centralized interface for managing portfolio content.
+
+| Module | Operations |
+|:---|:---|
+| Profile | Edit personal information |
+| Skills | Create, update, and delete |
+| Projects | Manage descriptions and URLs |
+| Languages | Organize multilingual content |
+| Repository | GitHub synchronization |
+| SHA Verification | Validate file versions |
+| Content | Manage portfolio information |
+
+## Administration Addresses
+
+**Production**
 
 ```text
 https://parsa7400.github.io/?admin=1
 ```
 
-**Local development endpoint**
+**Local development**
 
 ```text
 http://localhost:5500/?admin=1
 ```
 
-### GitHub API Authentication
+## GitHub API Authentication
 
 The repository integration requires an appropriate authentication mechanism.
 
@@ -271,87 +250,73 @@ The repository integration requires an appropriate authentication mechanism.
 4. Select Fine-grained tokens.
 5. Generate a new token.
 6. Restrict access to the required repository.
-7. Configure the necessary repository permissions.
+7. Configure the required permissions.
 8. Use the token through a secure server-side integration.
 
-> **Security requirement:** Never embed a GitHub Personal Access Token in public HTML, CSS, JavaScript, or client-side configuration. Browser-exposed credentials can be extracted. Production deployments should use a secure backend or another trusted server-side authentication mechanism.
+> **Security requirement:** Never expose a GitHub Personal Access Token in public HTML, CSS, JavaScript, or client-side configuration. Use a secure backend or trusted server-side authentication mechanism.
 
 ---
 
-## 06. LOCAL DEVELOPMENT ENVIRONMENT
+# 06. LOCAL DEVELOPMENT
 
-### System Requirements
+## Requirements
 
-| Component | Purpose | Official Resource |
-|:---|:---|:---|
-| Git | Repository cloning and version control | [Git Downloads](https://git-scm.com/downloads) |
-| Visual Studio Code | Development environment | [VS Code](https://code.visualstudio.com/) |
-| Google Chrome | Browser testing | [Chrome](https://www.google.com/chrome/) |
-| Python | Optional local HTTP server | [Python](https://www.python.org/downloads/) |
+| Tool | Resource |
+|:---|:---|
+| Git | [Download](https://git-scm.com/downloads) |
+| Visual Studio Code | [Download](https://code.visualstudio.com/) |
+| Google Chrome | [Download](https://www.google.com/chrome/) |
+| Python | [Download](https://www.python.org/downloads/) |
 
-### Step 01 — Clone the Repository
-
-Open PowerShell, Command Prompt, or your preferred terminal.
+## Step 01 — Clone Repository
 
 ```bash
 git clone https://github.com/parsa7400/parsa7400.github.io.git
 ```
 
-Navigate into the project directory:
-
 ```bash
 cd parsa7400.github.io
 ```
 
-### Step 02 — Open the Development Environment
+## Step 02 — Open Project
 
 ```bash
 code .
 ```
 
-Alternatively, open Visual Studio Code and select:
+## Step 03 — Run Local Server
 
-```text
-File → Open Folder → parsa7400.github.io
-```
+**Option A: Live Server**
 
-### Step 03 — Launch the Local Website
+1. Install the Live Server extension.
+2. Open `index.html`.
+3. Select Open with Live Server.
 
-**Option A — Live Server**
-
-1. Open the Extensions marketplace.
-2. Search for Live Server.
-3. Install the extension.
-4. Open `index.html`.
-5. Select Open with Live Server.
-
-Default development address:
+Default address:
 
 ```text
 http://127.0.0.1:5500
 ```
 
-**Option B — Python HTTP Server**
-
-Execute:
+**Option B: Python**
 
 ```bash
 python -m http.server 8000
 ```
 
-Open the following address:
+Open:
 
 ```text
 http://localhost:8000
 ```
 
-Terminate the local server using:
+Stop the server:
 
 ```text
 CTRL + C
 ```
 
-### Step 04 — Customize Portfolio Data
+## Step 04 — Customize Portfolio
 
 Open:
 
@@ -359,31 +324,29 @@ Open:
 portfolio.json
 ```
 
-Depending on the existing JSON schema, the portfolio information can be customized to include:
+Depending on the existing JSON schema, customize:
 
-- Personal profile information.
-- Professional biography.
+- Profile information.
+- Biography.
 - Programming skills.
 - Project descriptions.
 - Project URLs.
-- Social media links.
+- Social links.
 - Persian and English content.
 
-**Important:** Preserve the existing JSON structure and validate syntax before deploying changes.
+Preserve the existing JSON structure and validate the syntax before deployment.
 
-### Step 05 — Deploy with GitHub Pages
+## Step 05 — Deploy with GitHub Pages
 
-1. Create a GitHub repository.
-2. Upload the project files.
-3. Configure the repository name according to your desired GitHub Pages URL.
-4. Navigate to Settings.
-5. Open Pages.
-6. Select Deploy from a branch.
-7. Choose the `main` branch.
-8. Select the `/ (root)` directory.
-9. Save the configuration.
+1. Upload the project to GitHub.
+2. Open repository Settings.
+3. Select Pages.
+4. Choose Deploy from a branch.
+5. Select the `main` branch.
+6. Select the root directory.
+7. Save the configuration.
 
-For a user-site repository named `USERNAME.github.io`, the expected website address is:
+Expected address:
 
 ```text
 https://USERNAME.github.io
@@ -391,117 +354,166 @@ https://USERNAME.github.io
 
 ---
 
-## 07. PROJECT ENDPOINTS
+# 07. PROJECT ENDPOINTS
 
 <div align="center">
 
-| SERVICE | DESTINATION |
-|:---|:---|
-| LIVE WEBSITE | [parsa7400.github.io](https://parsa7400.github.io) |
-| ADMINISTRATION | [Admin Dashboard](https://parsa7400.github.io/?admin=1) |
-| SOURCE REPOSITORY | [GitHub Repository](https://github.com/parsa7400/parsa7400.github.io) |
-| PORTFOLIO DATABASE | [portfolio.json](https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json) |
-| DOCUMENTATION | [README.md](https://github.com/parsa7400/parsa7400.github.io/blob/main/README.md) |
+<a href="https://parsa7400.github.io">
+<img width="100%" src="https://img.shields.io/badge/LIVE_WEBSITE-OPEN_PORTFOLIO-00F5D4?style=for-the-badge&labelColor=080D18"/>
+</a>
+
+<a href="https://parsa7400.github.io/?admin=1">
+<img width="100%" src="https://img.shields.io/badge/ADMINISTRATION-OPEN_DASHBOARD-9B72F2?style=for-the-badge&labelColor=080D18"/>
+</a>
+
+<a href="https://github.com/parsa7400/parsa7400.github.io">
+<img width="100%" src="https://img.shields.io/badge/GITHUB-SOURCE_REPOSITORY-FFFFFF?style=for-the-badge&logo=github&logoColor=black&labelColor=080D18"/>
+</a>
+
+<a href="https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json">
+<img width="100%" src="https://img.shields.io/badge/DATABASE-PORTFOLIO_JSON-00C2FF?style=for-the-badge&labelColor=080D18"/>
+</a>
 
 </div>
 
 ---
 
-## 08. TROUBLESHOOTING
+# 08. TROUBLESHOOTING
 
-| Issue | Recommended Resolution |
-|:---|:---|
-| Website does not load | Verify the local server and requested URL |
-| Portfolio data is missing | Validate the JSON structure and loading path |
-| Git command is unavailable | Install Git and configure the system PATH |
-| Live Server fails to launch | Verify extension installation and activation |
-| GitHub synchronization fails | Review API permissions and authentication |
-| Images are unavailable | Verify image URLs and external resource access |
-| Recent changes are missing | Refresh the browser and clear cached resources |
-| Admin interface is unavailable | Verify the application configuration and access requirements |
+<details>
+<summary><strong>Website does not load</strong></summary>
+
+Verify the local server, repository deployment settings, and requested URL.
+
+</details>
+
+<details>
+<summary><strong>Portfolio data is missing</strong></summary>
+
+Validate the JSON structure, file path, and browser console errors.
+
+</details>
+
+<details>
+<summary><strong>Git command is unavailable</strong></summary>
+
+Install Git and configure the system PATH.
+
+</details>
+
+<details>
+<summary><strong>Live Server does not launch</strong></summary>
+
+Verify the extension installation and activation.
+
+</details>
+
+<details>
+<summary><strong>GitHub synchronization fails</strong></summary>
+
+Review API permissions, authentication, and repository access.
+
+</details>
+
+<details>
+<summary><strong>Images are unavailable</strong></summary>
+
+Verify image URLs and external resource availability.
+
+</details>
+
+<details>
+<summary><strong>Recent changes are missing</strong></summary>
+
+Refresh the browser and check cached resources.
+
+</details>
+
+<details>
+<summary><strong>Admin interface is unavailable</strong></summary>
+
+Verify the application configuration and access requirements.
+
+</details>
 
 ---
 
-## 09. DOCUMENTATION & DEVELOPER RESOURCES
+# 09. DOCUMENTATION
 
 <div align="center">
 
 <a href="https://docs.github.com/en/rest">
-<img src="https://img.shields.io/badge/GITHUB_REST_API-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB_REST_API-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://pages.github.com/">
-<img src="https://img.shields.io/badge/GITHUB_PAGES-222222?style=for-the-badge&logo=githubpages&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB_PAGES-222222?style=for-the-badge&logo=githubpages&logoColor=white"/>
 </a>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-<img src="https://img.shields.io/badge/JAVASCRIPT_DOCUMENTATION-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/JAVASCRIPT_DOCS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </a>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-<img src="https://img.shields.io/badge/HTML5_DOCUMENTATION-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/HTML5_DOCS-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 </a>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-<img src="https://img.shields.io/badge/CSS3_DOCUMENTATION-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3_DOCS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
 
 <a href="https://code.visualstudio.com/docs">
-<img src="https://img.shields.io/badge/VISUAL_STUDIO_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<img src="https://img.shields.io/badge/VISUAL_STUDIO_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
 </a>
 
 </div>
 
 ---
 
-## 10. PROJECT SPECIFICATIONS
+# 10. PROJECT SPECIFICATIONS
 
 | Specification | Details |
 |:---|:---|
 | Project | Parsa7400 Developer Center |
 | Maintainer | @parsa7400 |
-| Primary Technologies | HTML5, CSS3, JavaScript |
+| Technologies | HTML5, CSS3, JavaScript |
 | Architecture | Vanilla JavaScript |
-| API Integration | GitHub REST API |
+| API | GitHub REST API |
 | Data Format | JSON |
-| Deployment Platform | GitHub Pages |
-| Repository Visibility | Public |
+| Hosting | GitHub Pages |
+| Repository | Public |
 | License | MIT |
 
 ---
 
-## 11. CONNECT & EXPLORE
+# 11. CONNECT
 
 <div align="center">
 
 <a href="https://github.com/parsa7400">
-<img src="https://img.shields.io/badge/GITHUB_PROFILE-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB_PROFILE-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://parsa7400.github.io">
-<img src="https://img.shields.io/badge/PERSONAL_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black">
+<img src="https://img.shields.io/badge/PERSONAL_PORTFOLIO-00F5D4?style=for-the-badge&logo=googlechrome&logoColor=black"/>
 </a>
 
 <br><br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2800&pause=1000&color=00F5D4&center=true&vCenter=true&width=700&height=60&lines=INNOVATION+STARTS+WITH+AN+IDEA;ENGINEERING+MAKES+IT+REAL;BUILD+WHAT+DOES+NOT+EXIST+YET;THE+NEXT+VERSION+IS+ALWAYS+BETTER" alt="Engineering Philosophy">
+<img width="100%" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=1000&color=00F5D4&center=true&vCenter=true&width=600&height=60&lines=INNOVATION+STARTS+WITH+AN+IDEA;ENGINEERING+MAKES+IT+REAL;BUILD+WHAT+DOES+NOT+EXIST+YET;THE+NEXT+VERSION+IS+ALWAYS+BETTER"/>
 
 <br><br>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:050816,35:172B4D,70:087F8C,100:00F5D4&section=footer">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&color=0:050816,35:172B4D,70:087F8C,100:00F5D4&section=footer"/>
 
 ### PARSA7400
 
 **SOFTWARE DEVELOPMENT · ENGINEERING · INNOVATION**
 
-`DESIGN WITH INTENT` &nbsp; `BUILD WITH PRECISION` &nbsp; `THINK BEYOND LIMITS`
+`DESIGN WITH INTENT` · `BUILD WITH PRECISION` · `THINK BEYOND LIMITS`
 
 <br>
 
 <sub>© 2026 PARSA7400. All rights reserved.</sub>
 
 </div>
-
-<!-- ============================================================ -->
-<!-- END OF PARSA7400 DEVELOPER CENTER README -->
-<!-- ============================================================ -->
