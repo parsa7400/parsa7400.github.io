@@ -1,77 +1,78 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="Laptop" width="55" height="55" />
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="55" height="55" />
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Glowing%20Star.png" alt="Glowing Star" width="55" height="55" />
+  <img src="https://media.giphy.com/media/LmN8OYiChUwwg/giphy.gif" width="40" alt="Code Animation" />
+  <img src="https://media.giphy.com/media/unQ3IJU2RG7DO/giphy.gif" width="40" alt="Terminal" />
+  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="40" alt="Rocket" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1200&color=00F5D4&center=true&vCenter=true&width=750&height=70&lines=%E2%9A%A1+PARSA+BASIRIAN+%7C+%40parsa7400;%F0%9F%9B%A0%EF%B8%8F+Full-Stack+Architect+%26+Automation+Engineer;%F0%9F%9A%80+Dynamic+Developer+Center+%26+Cloud+Portfolio;%F0%9F%94%A5+Powered+by+GitHub+REST+API+%26+Next-Gen+Vanilla+Stack" alt="Cyberpunk Animated Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1100&color=00F5D4&center=true&vCenter=true&width=820&height=70&lines=%E2%9A%A1+%40parsa7400+%7C+Next-Gen+Developer+Center;%F0%9F%A4%96+Automated+Systems+%26+Cloud+Architecture;%F0%9F%9B%A0%EF%B8%8F+Full-Stack+Vanilla+JS+%2B+GitHub+REST+API;%F0%9F%94%A5+Dynamic+Portfolio+%26+Live+CMS+Controller" alt="Dynamic Typing Banner" />
 </p>
 
 <p align="center">
   <a href="https://parsa7400.github.io">
-    <img src="https://img.shields.io/badge/SYSTEM-ONLINE%20%E2%9C%94-00F5D4?style=for-the-badge&logo=statuspage&logoColor=000000" alt="System Online" />
+    <img src="https://img.shields.io/badge/STATUS-OPERATIONAL%20%E2%9C%94-%2300FF66?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status" />
   </a>
   <a href="https://docs.github.com/en/rest">
-    <img src="https://img.shields.io/badge/ENGINE-REST%20API-7928CA?style=for-the-badge&logo=github&logoColor=white" alt="REST API" />
+    <img src="https://img.shields.io/badge/CORE-GITHUB_API-%237928CA?style=for-the-badge&logo=github&logoColor=white" alt="API" />
   </a>
   <a href="https://github.com/parsa7400">
-    <img src="https://img.shields.io/badge/ARCHITECT-PARSA7400-FF007A?style=for-the-badge&logo=probot&logoColor=white" alt="Developer" />
+    <img src="https://img.shields.io/badge/CREATOR-@parsa7400-%23FF007A?style=for-the-badge&logo=probot&logoColor=white" alt="Creator" />
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/LICENSE-MIT%20SECURE-FFBE0B?style=for-the-badge&logo=open-source-initiative&logoColor=black" alt="License" />
+    <img src="https://img.shields.io/badge/LICENSE-MIT_SECURE-%23FFBE0B?style=for-the-badge&logo=opensourceinitiative&logoColor=black" alt="License" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://parsa7400.github.io">
-    <img src="https://img.shields.io/badge/LIVE_PREVIEW-%F0%9F%8C%90_WEBSITE-0070F3?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Demo" />
+    <img src="https://img.shields.io/badge/🌐_LIVE_SYSTEM-PORTFOLIO-0070F3?style=flat-square&logo=googlechrome&logoColor=white" alt="Live System" />
   </a>
   &nbsp;•&nbsp;
   <a href="https://github.com/parsa7400/parsa7400.github.io/blob/main/portfolio.json">
-    <img src="https://img.shields.io/badge/DATABASE-%F0%9F%97%84%EF%B8%8F_JSON_CORE-4B32C3?style=flat-square&logo=json&logoColor=white" alt="JSON Database" />
+    <img src="https://img.shields.io/badge/📂_DATABASE-JSON_CORE-4B32C3?style=flat-square&logo=json&logoColor=white" alt="Database" />
   </a>
   &nbsp;•&nbsp;
   <a href="https://parsa7400.github.io/?admin=1">
-    <img src="https://img.shields.io/badge/ADMIN_PORTAL-%F0%9F%94%90_DEV_CENTER-FF4081?style=flat-square&logo=keycdn&logoColor=white" alt="Admin Portal" />
+    <img src="https://img.shields.io/badge/🔐_ADMIN_PORTAL-DEV_CENTER-FF4081?style=flat-square&logo=keycdn&logoColor=white" alt="Admin Portal" />
   </a>
 </p>
-
 
 ---
 
 ## 🎯 نمای کلی پروژه (Overview)
 
-پروژه **Developer Center** پورتفولیوی شخصی و پیشرفته **`parsa7400`** است؛ سیستمی فوق‌العاده سریع، مدرن و واکنش‌گرا که مرز بین فرانت‌اند خالص و ابزارهای مدیریت محتوا را دگرگون کرده است. ویژگی منحصربه‌فرد این پلتفرم، مجهز بودن به یک **پنل مدیریت داخلی امن** است که تغییرات را مستقیماً از طریق **GitHub Contents API** روی مخزن اعمال می‌کند.
+> **`⚡ Next-Gen Architecture`**  
+> پروژه **Developer Center** پورتفولیوی شخصی و هسته ابری **`parsa7400`** است؛ پلتفرمی با کارایی فوق‌العاده بالا، طراحی مدرن و واکنش‌گرا که مرز بین فرانت‌اند مستقل و سیستم‌های مدیریت محتوا را ارتقا داده است.  
+> ویژگی بنیادین این سیستم، برخورداری از یک **پنل مدیریت تعبیه‌شده اختصاصی** است که ویرایش‌ها را بدون نیاز به سرور واسط، مستقیماً از طریق **GitHub Contents API** روی مخزن اعمال و سینک می‌کند.
 
 ---
 
-## 🔐 قابلیت‌های پنل ادمین (Admin Panel Capabilities)
+## 🔐 قابلیت‌های پنل ادمین (Admin Capabilities)
 
-> سیستم مدیریت محتوا کاملاً درون‌برنامه تعبیه شده است و با توکن‌های امنیتی گیت‌هاب (`Fine-grained PAT`) توسط **`parsa7400`** مدیریت می‌شود.
+> 💡 *سیستم مدیریت محتوا کاملاً درون‌برنامه تعبیه شده و به کمک توکن‌های امنیتی گیت‌هاب (`Fine-grained PAT`) با دسترسی مستقیم توسط **`parsa7400`** هدایت می‌شود.*
 
-| بخش قابل مدیریت | قابلیت‌ها و جزئیات فنی |
+| بخش قابل کنترل | قابلیت‌ها و جزئیات فنی معماری |
 | :--- | :--- |
-| 👤 **پروفایل کاربری** | ویرایش زنده نام، عنوان شغلی، بیوگرافی کوتاه و متن‌های درباره من. |
-| 📊 **سیستم مهارت‌ها (Skills)** | افزودن، ویرایش و حذف مهارت‌ها به همراه کنترل پویای درصدها و نوارها. |
-| 🚀 **پروژه‌ها (Projects)** | مدیریت کامل کارت‌های پروژه، لینک‌ها، توضیحات و تکنولوژی‌ها. |
-| 🌐 **چندزبانی (i18n)** | کنترل و شخصی‌سازی متن‌های چندزبانه (فارسی / انگلیسی) به صورت آنی. |
-| 💾 **همگام‌سازی گیت‌هاب** | کامیت و ذخیره‌سازی خودکار تغییرات در فایل `portfolio.json` با بررسی تداخل SHA. |
+| 🧑‍💻 **پروفایل و هویت (`Profile`)** | بازنویسی آنی عنوان تخصصی، بیوگرافی و ساختار بخش درباره من |
+| 📊 **موتور مهارت‌ها (`Skills Engine`)** | افزودن، ویرایش و حذف مهارت‌ها با کنترل داینامیک درصدها و انیمیشن لودرها |
+| 🚀 **ویترین پروژه‌ها (`Showcase`)** | مدیریت کامل کارت‌های پروژه‌ها، تگ‌های فنی، هایپرلینک‌ها و پیش‌نمایش |
+| 🌐 **موتور دو زبانه (`i18n Core`)** | سوئیچ و همگام‌سازی بلادرنگ متون فارسی و انگلیسی در کل سیستم |
+| 💾 **سایکل ذخیره ابری (`Git Sync`)** | پردازش خودکار تغییرات در `portfolio.json` با متد SHA Validation جهت جلوگیری از Conflict |
 
 ---
 
-## ✨ ویژگی‌های برجسته بصری (UI & UX Highlights)
+## ✨ جلوه‌های بصری و پرفورمنس (UI / UX Highlights)
 
-- **📊 انیمیشن‌های شمارش (Count-up & Meters):** لود همزمان اعداد و مترهای درصد مهارت‌ها به محض ورود به بخش مربوطه (`IntersectionObserver`).
-- **🧊 کارت‌های سه‌بعدی (3D Tilt Effect):** واکنش تعاملی و سه‌بعدی کارت‌ها نسبت به حرکت موس.
-- **🌊 دکمه‌های موج‌دار (Ripple Effects):** افکت‌های کلیک مدرن و چشم‌نواز در سراسر رابط کاربری.
-- **⚡ عملکرد فوق‌العاده:** بدون وابستگی به فریم‌ورک‌های سنگین (React/Vue)، کاملاً بهینه با جاوااسکریپت خالص.
+- **📈 نوارها و لودرهای داینامیک (`Count-up & Target Meters`):** اجرای انیمیشن شمارش اعداد و میترها به کمک `IntersectionObserver` درست در زمان اسکرول.
+- **🧊 افکت سه‌بعدی کارت‌ها (`3D Tilt Physics`):** واکنش تعاملی و پرسپکتیو پویا با زاویه حرکت ماوس.
+- **🌊 موج‌های کلیک (`Material Ripple Effects`):** بازخورد لمسی و بصری شکیل روی کلیدها و کنترل‌ها.
+- **⚡ پشته خالص و فوق بهینه (`Zero-Framework Stack`):** بدون وابستگی به فریم‌ورک‌های سنگین، فوق سریع با پردازش بومی جاوااسکریپت.
 
 ---
 
-## 🏗️ ساختار مخزن (Repository Architecture)
+## 🏗️ ساختار فایل‌ها (Repository Architecture)
 ```text
 parsa7400.github.io/
-├── 📄 index.html          # هسته اصلی فرانت‌اند، پنل ادمین و استایل‌های یکپارچه
+├── 📄 index.html          # هسته اصلی وب‌سایت، ماژول ادمین و استایل‌های یکپارچه
 ├── 📊 portfolio.json      # پایگاه داده ساختاریافته JSON (منبع داده‌های سایت)
-└── 📜 README.md           # مستندات حرفه‌ای پروژه
+└── 📜 README.md           # مستندات و معرفی جامع معماری سیستم
