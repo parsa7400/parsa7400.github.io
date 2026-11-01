@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FF66&center=true&vCenter=true&width=650&height=60&lines=⚡+PARSA+BASIRIAN+%E2%80%A2+PARSA7400;🚀+Developer+Center+%26+Portfolio+Manager;🔥+Powered+by+GitHub+REST+API+%26+Vanilla+JS" alt="Animated Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1000&color=00FF66&center=true&vCenter=true&width=700&height=60&lines=⚡+PARSA+BASIRIAN+%E2%80%A2+PARSA7400;🚀+Developer+Center+%26+Dynamic+Portfolio;🔥+Powered+by+GitHub+REST+API+%26+Vanilla+JS" alt="Animated Typing Banner" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-ONLINE%20%F0%9F%94%A5-00ff66?style=for-the-badge&logo=githubpages&logoColor=black" />
-  <img src="https://img.shields.io/badge/BACKEND-GITHUB%20API-1f427f?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/DEVELOPER-PARSA7400-blueviolet?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge" />
+  <a href="https://parsa7400.github.io"><img src="https://img.shields.io/badge/STATUS-ONLINE_%F0%9F%94%A5-00ff66?style=for-the-badge&logo=githubpages&logoColor=black" alt="Status"></a>
+  <a href="https://docs.github.com/en/rest"><img src="https://img.shields.io/badge/BACKEND-GITHUB_API-1f427f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API"></a>
+  <a href="https://github.com/parsa7400"><img src="https://img.shields.io/badge/DEVELOPER-PARSA7400-blueviolet?style=for-the-badge&logo=github" alt="Developer"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://parsa7400.github.io"><b>🌐 Explore Live Demo</b></a> •
-  <a href="#-core-architecture"><b>🏗️ Architecture</b></a> •
-  <a href="/?admin=1"><b>🔐 Admin Panel</b></a>
+  🌐 <a href="https://parsa7400.github.io"><b>مشاهده زنده وب‌سایت (Live Demo)</b></a> • 
+  🏗️ <a href="#-ساختار-مخزن-repository-architecture"><b>معماری پروژه</b></a> • 
+  🔐 <a href="#-قابلیت‌های-پنل-ادمین-admin-panel-capabilities"><b>پنل ادمین</b></a>
 </p>
 
 ---
