@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://parsa7400.github.io"><img src="https://img.shields.io/badge/STATUS-ONLINE_%F0%9F%94%A5-00ff66?style=for-the-badge&logo=githubpages&logoColor=black" alt="Status"></a>
-  <a href="https://docs.github.com/en/rest"><img src="https://img.shields.io/badge/BACKEND-GITHUB_API-1f427f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API"></a>
+  <a href="https://parsa7400.github.io"><img src="https://img.shields.io/badge/STATUS-ONLINE%20🔥-00ff66?style=for-the-badge&logo=githubpages&logoColor=black" alt="Status"></a>
+  <a href="https://docs.github.com/en/rest"><img src="https://img.shields.io/badge/BACKEND-GITHUB%20API-1f427f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API"></a>
   <a href="https://github.com/parsa7400"><img src="https://img.shields.io/badge/DEVELOPER-PARSA7400-blueviolet?style=for-the-badge&logo=github" alt="Developer"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge" alt="License"></a>
 </p>
