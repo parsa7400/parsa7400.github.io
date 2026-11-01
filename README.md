@@ -1,48 +1,55 @@
 <div align="center">
 
-# ⚡ Parsa Basirian | Developer Center & Portfolio
-### *High-Performance, Dynamic Personal Portfolio with a GitHub-Powered Admin Panel*
+# ⚡ PARSA BASIRIAN • DEVELOPER CENTER & PORTFOLIO
+### *Next-Gen Dynamic Portfolio Powered by Vanilla Stack & GitHub REST API*
 
-[![GitHub Pages](https://img.shields.io/badge/Status-Live%20%F0%9F%94%A5-success?style=for-the-badge&logo=githubpages)](https://parsa7400.github.io)
-[![GitHub API](https://img.shields.io/badge/Backend-GitHub%20REST%20API-blue?style=for-the-badge&logo=github)](https://docs.github.com/en/rest)
-[![JavaScript](https://img.shields.io/badge/Frontend-Vanilla%20JS%20(ES6+)-yellow?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/STATUS-ONLINE_%F0%9F%94%A5-00ff66?style=for-the-badge&logo=githubpages&logoColor=black)](https://parsa7400.github.io)
+[![GitHub API](https://img.shields.io/badge/BACKEND-GITHUB_API-1f427f?style=for-the-badge&logo=github&logoColor=white)](https://docs.github.com/en/rest)
+[![Stack](https://img.shields.io/badge/FRONTEND-ES6%2B_%7C_VANILLA-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org)
+[![License](https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge)](LICENSE)
 
-[🌐 مشاهده زنده وب‌سایت (Live Demo)](https://parsa7400.github.io)
+<p align="center">
+  <a href="https://parsa7400.github.io"><b>🌐 Explore Live Demo</b></a> •
+  <a href="#-core-architecture"><b>🏗️ Architecture</b></a> •
+  <a href="#-admin-panel-capabilities"><b>🔐 Admin Panel</b></a>
+</p>
 
 </div>
 
 ---
 
-## 🌟 درباره پروژه (About Project)
+## 🎯 نمای کلی پروژه (Overview)
 
-این پروژه یک **پورتفولیوی شخصی و مرکز توسعه فوق‌العاده مدرن، تعاملی و واکنش‌گرا** است که بر روی **GitHub Pages** میزبانی می‌شود. 
-ویژگی منحصربه‌فرد این سیستم، داشتن یک **پنل مدیریت (Admin Panel) داخلی و امن** است که مستقیماً از طریق **GitHub Contents API** به مخزن متصل شده و به شما اجازه می‌دهد تمام اطلاعات سایت (پروفایل، مهارت‌ها، پروژه‌ها و متن‌ها) را به صورت زنده، بدون نیاز به هاست مجزا یا دیتابیس سنگین، مستقیماً در گیت‌هاب ویرایش و ذخیره کنید.
-
----
-
-## 🚀 ویژگی‌های کلیدی (Key Features)
-
-- **🔥 پنل ادمین اختصاصی با اتصال مستقیم به گیت‌هاب:** مدیریت کامل محتوا از طریق API و ذخیره خودکار تغییرات در قالب Commit مستقیم روی مخزن با استفاده از Fine-grained PAT.
-- **📊 انیمیشن‌های روان و پویا (Count-up & Meter):** انیمیشن‌های شمارش اعداد و درصد مهارت‌ها همزمان با لود اسکرول صفحه (`IntersectionObserver`).
-- **🧊 جلوه‌های بصری سه‌بعدی (3D Tilt Cards):** کارت‌های تعاملی جذاب با افکت‌های حرکتی موس و دکمه‌های موج‌دار (`Ripple Effects`).
-- **🌐 چندزبانه هوشمند (i18n):** قابلیت سوئیچ و مدیریت کامل متن‌ها و محتوا به زبان‌های مختلف (فارسی و انگلیسی).
-- **⚡ عملکرد فوق‌العاده سریع:** پیاده‌سازی شده با Vanilla JavaScript خالص بدون وابستگی به فریم‌ورک‌های سنگین.
+پروژه **Developer Center** یک پورتفولیوی شخصی فوق‌العاده سریع، واکنش‌گرا و تعاملی است که مرز بین فرانت‌اند مدرن و ابزارهای توسعه‌دهنده را از بین برده است. ویژگی کلیدی این سیستم، داشتن یک **پنل مدیریت داخلی امن** است که به جای اتکا به دیتابیس‌های سنتی، مستقیماً از طریق **GitHub Contents API** به مخزن متصل می‌شود.
 
 ---
 
-## 🛠️ تکنولوژی‌های استفاده شده (Tech Stack)
+## 🔐 قابلیت‌های پنل ادمین (Admin Panel Capabilities)
 
-* **فرانت‌اند:** HTML5, CSS3, Modern ES6+ JavaScript
-* **لایه داده:** Structured JSON (`portfolio.json`)
-* **ارتباطات و احراز هویت:** GitHub REST API (Fine-grained Tokens with Contents Read/Write permissions)
-* **میزبانی و هاستینگ:** GitHub Pages
+> سیستم مدیریت محتوا کاملاً درون‌برنامه (In-App) تعبیه شده است و با توکن‌های امنیتی گیت‌هاب (`Fine-grained PAT`) کار می‌کند.
+
+| بخش قابل مدیریت | قابلیت‌ها و جزئیات |
+| :--- | :--- |
+| 👤 **پروفایل کاربری** | ویرایش زنده نام، عنوان شغلی، بیوگرافی کوتاه و متن‌های درباره من. |
+| 📊 **سیستم مهارت‌ها (Skills)** | افزودن، ویرایش و حذف مهارت‌ها به همراه کنترل پویای درصدها و نوارها. |
+| 🚀 **پ پروژه‌ها (Projects)** | مدیریت کامل کارت‌های پروژه، لینک‌ها، توضیحات و تکنولوژی‌ها. |
+| 🌐 **چندزبانی (i18n)** | کنترل و شخصی‌سازی متن‌های چندزبانه (فارسی / انگلیسی) به صورت آنی. |
+| 💾 **همگام‌سازی گیت‌هاب** | کامیت و ذخیره‌سازی خودکار تغییرات در فایل `portfolio.json` با بررسی تداخل SHA. |
 
 ---
 
-## 📁 ساختار مخزن (Project Structure)
+## ✨ ویژگی‌های برجسته بصری (UI & UX Highlights)
+
+- **📊 انیمیشن‌های شمارش (Count-up & Meters):** لود همزمان اعداد و مترهای درصد مهارت‌ها به محض ورود به بخش مربوطه (`IntersectionObserver`).
+- **🧊 کارت‌های سه‌بعدی (3D Tilt Effect):** واکنش تعاملی و سه‌بعدی کارت‌ها نسبت به حرکت موس.
+- **🌊 دکمه‌های موج‌دار (Ripple Effects):** افکت‌های کلیک مدرن و چشم‌نواز در سراسر رابط کاربری.
+- **⚡ عملکرد فوق‌العاده:** بدون وابستگی به فریم‌ورک‌های سنگین (React/Vue)، کاملاً بهینه با جاوااسکریپت خالص.
+
+---
+
+## 🏗️ ساختار مخزن (Repository Architecture)
 ```text
 parsa7400.github.io/
-├── index.html          # صفحه اصلی پورتفولیو و پنل ادمین یکپارچه
-├── portfolio.json      # پایگاه داده ساختاریافته و مرکزی محتوای سایت
-└── README.md           # مستندات پروژه
+├── 📄 index.html          # هسته اصلی فرانت‌اند، پنل ادمین و استایل‌های یکپارچه
+├── 📊 portfolio.json      # پایگاه داده ساختاریافته JSON (منبع داده‌های سایت)
+└── 📜 README.md           # مستندات حرفه‌ای پروژه
