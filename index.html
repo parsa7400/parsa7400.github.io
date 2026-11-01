@@ -1,0 +1,1801 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d19">
+  <meta name="description" id="pageDescription" content="وب‌سایت شخصی و نمونه‌کارها">
+  <title>parsa7400 | نمونه‌کارها</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090d19;
+      --surface: #11182a;
+      --surface-2: #172038;
+      --text: #f4f6ff;
+      --muted: #a5b2ca;
+      --line: rgba(255,255,255,.11);
+      --accent: #9061f9;
+      --accent-2: #20c997;
+      --danger: #fb7185;
+      --radius: 20px;
+      --max: 1160px;
+      --shadow: 0 22px 70px rgba(0,0,0,.28);
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--text);
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 10%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 34%),
+        radial-gradient(circle at 86% 26%, color-mix(in srgb, var(--accent-2) 11%, transparent), transparent 36%),
+        var(--bg);
+      overflow-x: hidden;
+    }
+    [hidden] { display: none !important; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; color: inherit; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
+    ::selection { background: var(--accent); color: white; }
+    .container { width: min(var(--max), calc(100% - 36px)); margin-inline: auto; }
+    .muted { color: var(--muted); }
+    .ltr { direction: ltr; text-align: left; }
+    .stack { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .space-between { display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap; }
+
+    .orb {
+      position: fixed;
+      width: 380px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: .08;
+      filter: blur(85px);
+      pointer-events: none;
+      top: 20%;
+      left: -170px;
+      z-index: -1;
+      animation: drift 13s ease-in-out infinite alternate;
+    }
+    @keyframes drift { to { transform: translate(110px, 110px); } }
+    @keyframes enter {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      50% { transform: translateY(-9px); }
+    }
+    .reveal { animation: enter .65s both; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(9,13,25,.86);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      justify-content: space-between;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 900; white-space: nowrap; }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+      background: linear-gradient(140deg, var(--accent), var(--accent-2));
+      box-shadow: 0 5px 28px color-mix(in srgb, var(--accent) 35%, transparent);
+      color: white;
+      font: bold 15px ui-monospace, monospace;
+    }
+    .nav-links { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+    .nav-links a:not(.btn) { color: var(--muted); transition: color .2s; white-space: nowrap; }
+    .nav-links a:hover { color: white; }
+
+    .btn, .chip {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      color: var(--text);
+      border-radius: 11px;
+      min-height: 42px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 16px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: transform .2s, border-color .2s, background .2s, box-shadow .2s;
+    }
+    .btn:hover:not(:disabled), .chip:hover {
+      transform: translateY(-2px);
+      border-color: color-mix(in srgb, var(--accent) 55%, white 10%);
+      background: rgba(255,255,255,.09);
+    }
+    .btn:disabled { opacity: .55; cursor: wait; }
+    .btn-primary {
+      background: linear-gradient(130deg, var(--accent), #6552d9);
+      border-color: transparent;
+      color: white;
+      box-shadow: 0 8px 28px color-mix(in srgb, var(--accent) 30%, transparent);
+    }
+    .btn-danger { color: #ffc1ca; border-color: rgba(251,113,133,.35); }
+    .btn-small { min-height: 35px; padding: 5px 11px; font-size: 12px; }
+    .chip { min-height: 35px; border-radius: 99px; color: var(--muted); }
+    .chip.active { color: white; background: color-mix(in srgb, var(--accent) 25%, transparent); border-color: var(--accent); }
+
+    main > section { padding-block: 57px; }
+    .hero {
+      min-height: 560px;
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      align-items: center;
+      gap: 45px;
+      padding-block: 75px 55px;
+    }
+    .eyebrow {
+      color: var(--accent-2);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .04em;
+    }
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 6px 13px;
+      border-radius: 99px;
+      background: color-mix(in srgb, var(--accent-2) 10%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent-2) 35%, transparent);
+      margin-bottom: 18px;
+      color: var(--accent-2);
+      font-size: 13px;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      background: currentColor;
+      border-radius: 50%;
+      box-shadow: 0 0 13px currentColor;
+    }
+    h1, h2, h3, h4, p { margin-top: 0; }
+    h1 { font-size: clamp(36px, 6vw, 66px); line-height: 1.18; margin-bottom: 17px; }
+    h2 { font-size: clamp(27px, 3.7vw, 37px); line-height: 1.35; }
+    .gradient-text {
+      background: linear-gradient(110deg, #cabaff, var(--accent-2), #f6a2d7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .lead { max-width: 650px; font-size: 18px; color: var(--muted); margin-bottom: 25px; }
+    .panel, .profile-card, .project-card, .form-card {
+      background: linear-gradient(155deg, rgba(24,32,53,.93), rgba(14,20,36,.94));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .panel, .form-card { padding: 26px; }
+    .profile-card { padding: 31px; animation: float 6s ease-in-out infinite; }
+    .profile-top { display: flex; gap: 16px; align-items: center; margin-bottom: 18px; }
+    .avatar {
+      width: 70px; height: 70px;
+      object-fit: cover;
+      border-radius: 19px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(140deg, var(--accent), var(--accent-2));
+      color: white;
+      font-size: 24px;
+      font-weight: 900;
+      flex: none;
+    }
+    .profile-top h3 { margin: 0; font-size: 20px; overflow-wrap: anywhere; }
+    .profile-top p { margin: 0; font-size: 13px; color: var(--muted); }
+    .pill {
+      display: inline-flex;
+      padding: 3px 10px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 9px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .section-head { margin-bottom: 25px; }
+    .section-head h2 { margin: 5px 0; }
+    .section-head p { color: var(--muted); margin: 0; font-size: 14px; }
+    .body-copy { white-space: pre-line; color: var(--muted); margin: 0; }
+    .skills-grid, .projects-grid { display: grid; gap: 17px; }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .projects-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%,310px),1fr)); }
+    .skill { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.025); }
+    .skill-title { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; font-weight: 700; }
+    .skill-title b { color: var(--accent-2); }
+    .meter { height: 7px; background: rgba(255,255,255,.09); border-radius: 30px; margin-top: 12px; overflow: hidden; }
+    .meter > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg,var(--accent),var(--accent-2)); }
+    .filters { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 22px; }
+    .filters input { flex: 1 1 240px; }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      padding: 23px;
+      transition: transform .25s, border-color .25s, box-shadow .25s;
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+      box-shadow: 0 25px 55px rgba(0,0,0,.35);
+    }
+    .project-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+    .project-head h3 { font-size: 18px; line-height: 1.4; }
+    .project-card p { color: var(--muted); font-size: 14px; white-space: pre-line; flex: 1; }
+    .tech { color: var(--accent-2); font-size: 12px; overflow-wrap: anywhere; }
+    .project-links { margin-top: 18px; }
+    .contact-box {
+      padding: 30px;
+      border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+      border-radius: var(--radius);
+      background: linear-gradient(125deg,
+        color-mix(in srgb, var(--accent) 15%, var(--surface)),
+        color-mix(in srgb, var(--accent-2) 8%, var(--surface)));
+    }
+    .empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 35px; }
+
+    .admin-shell { max-width: 1100px; padding-block: 35px 80px; }
+    .admin-header { margin-bottom: 25px; }
+    .admin-header h1 { font-size: 31px; }
+    .admin-sections { display: grid; gap: 20px; }
+    .form-card h2 { font-size: 21px; margin-bottom: 16px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+    .form-group { min-width: 0; margin-bottom: 14px; }
+    label { display: block; color: var(--muted); font-size: 13px; font-weight: 700; margin-bottom: 7px; }
+    .field {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(255,255,255,.045);
+      color: var(--text);
+      padding: 9px 12px;
+      outline: none;
+    }
+    .field:focus { border-color: var(--accent); }
+    textarea.field { min-height: 100px; resize: vertical; }
+    input[type="color"].field { padding: 5px; height: 45px; }
+    .hint { color: var(--muted); font-size: 12px; }
+    .notice {
+      border: 1px solid rgba(245,158,11,.4);
+      background: rgba(245,158,11,.08);
+      padding: 13px 16px;
+      border-radius: 11px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+    .editor-row {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      margin-bottom: 10px;
+      background: rgba(255,255,255,.025);
+    }
+    .row-fields { display: grid; grid-template-columns: 1fr 1fr 100px; gap: 10px; }
+    .row-actions { display: flex; justify-content: flex-end; gap: 6px; flex-wrap: wrap; margin-top: 9px; }
+    .list-title { font-weight: 800; overflow-wrap: anywhere; }
+    .admin-tools {
+      position: sticky;
+      bottom: 12px;
+      z-index: 30;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: rgba(15,21,37,.96);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .toast {
+      position: fixed;
+      bottom: 25px;
+      left: 50%;
+      z-index: 100;
+      transform: translateX(-50%);
+      padding: 12px 20px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #26344c;
+      box-shadow: var(--shadow);
+      max-width: min(90vw,600px);
+      text-align: center;
+    }
+    .site-warning {
+      margin-top: 18px;
+      border: 1px solid rgba(245,158,11,.35);
+      border-radius: 12px;
+      padding: 9px 13px;
+      color: #ffdda3;
+      font-size: 13px;
+    }
+    footer { border-top: 1px solid var(--line); color: var(--muted); text-align: center; padding: 30px 18px; font-size: 13px; }
+
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; min-height: unset; padding-top: 50px; }
+      .profile-card { animation: none; }
+      .nav { flex-wrap: wrap; padding-block: 10px; }
+      .nav-links { width: 100%; overflow-x: auto; padding-bottom: 4px; gap: 13px; }
+    }
+    @media (max-width: 620px) {
+      main > section { padding-block: 38px; }
+      .skills-grid, .grid-2, .row-fields { grid-template-columns: 1fr; }
+      .panel, .form-card, .profile-card { padding: 19px; }
+      .admin-tools { position: static; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="orb" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="./" aria-label="Home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span id="navName">parsa7400</span>
+      </a>
+
+      <nav class="nav-links" id="publicNav" aria-label="Main navigation">
+        <a href="#about" data-copy="navAbout"></a>
+        <a href="#skills" data-copy="navSkills"></a>
+        <a href="#projects" data-copy="navProjects"></a>
+        <a href="#contact" data-copy="navContact"></a>
+        <a class="btn btn-small" href="?admin=1" data-copy="navAdmin"></a>
+      </nav>
+
+      <nav class="nav-links" id="adminNav" hidden aria-label="Admin navigation">
+        <button class="btn btn-small" type="button" id="backToEditor" hidden></button>
+        <a class="btn btn-small" href="./" id="backToSite"></a>
+      </nav>
+
+      <button class="btn btn-small" type="button" id="langToggle" aria-label="Switch language">English</button>
+    </div>
+  </header>
+
+  <main id="siteView">
+    <section class="container hero">
+      <div class="reveal">
+        <div class="availability" id="availabilityBox">
+          <span class="dot"></span><span id="availabilityText"></span>
+        </div>
+        <h1><span data-copy="hello"></span> <span class="gradient-text" id="heroName"></span></h1>
+        <p class="lead" id="heroRole"></p>
+        <div class="stack">
+          <a href="#projects" class="btn btn-primary" data-copy="heroProjects"></a>
+          <a href="#contact" class="btn" data-copy="heroContact"></a>
+        </div>
+        <div class="site-warning" id="siteWarning" hidden></div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-top">
+          <div class="avatar" id="avatarFallback" aria-hidden="true">P</div>
+          <img class="avatar" id="avatarImage" alt="" hidden>
+          <div>
+            <h3 id="cardName"></h3>
+            <p id="cardRole"></p>
+          </div>
+        </div>
+        <p class="body-copy" id="shortBio"></p>
+        <div class="stack" id="quickTags" style="margin-top:20px"></div>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <div class="section-head">
+        <span class="eyebrow" data-copy="aboutKicker"></span>
+        <h2 data-copy="aboutTitle"></h2>
+      </div>
+      <div class="panel"><p class="body-copy" id="aboutText"></p></div>
+    </section>
+
+    <section class="container" id="skills">
+      <div class="section-head">
+        <span class="eyebrow" data-copy="skillsKicker"></span>
+        <h2 data-copy="skillsTitle"></h2>
+        <p data-copy="skillsSubtitle"></p>
+      </div>
+      <div class="skills-grid" id="skillsList"></div>
+    </section>
+
+    <section class="container" id="projects">
+      <div class="section-head">
+        <span class="eyebrow" data-copy="projectsKicker"></span>
+        <h2 data-copy="projectsTitle"></h2>
+        <p data-copy="projectsSubtitle"></p>
+      </div>
+      <div class="filters">
+        <input class="field" type="search" id="searchBox" aria-label="Search projects">
+        <div class="chips" id="categoryChips"></div>
+      </div>
+      <div class="projects-grid" id="projectsList"></div>
+    </section>
+
+    <section class="container" id="contact">
+      <div class="contact-box space-between">
+        <div>
+          <span class="eyebrow" data-copy="contactKicker"></span>
+          <h2 style="margin:5px 0" data-copy="contactTitle"></h2>
+          <p class="muted" style="margin:0" data-copy="contactSubtitle"></p>
+        </div>
+        <div class="stack" id="contactLinks"></div>
+      </div>
+    </section>
+  </main>
+
+  <main class="container admin-shell" id="adminView" hidden>
+    <section class="form-card" id="loginPanel">
+      <span class="eyebrow" data-admin="secureAccess"></span>
+      <h1 style="font-size:29px" data-admin="loginTitle"></h1>
+      <p class="muted" data-admin="loginIntro"></p>
+      <div class="notice" data-admin="securityNote"></div>
+      <form id="loginForm">
+        <label for="patInput">GitHub Fine-grained Personal Access Token</label>
+        <input class="field ltr" id="patInput" type="password"
+               autocomplete="off" spellcheck="false" required placeholder="github_pat_...">
+        <div class="stack" style="margin-top:17px">
+          <button class="btn btn-primary" id="loginButton" type="submit" data-admin="loginButton"></button>
+          <a class="btn" href="./" data-admin="cancel"></a>
+        </div>
+      </form>
+    </section>
+
+    <div class="admin-sections" id="editorPanel" hidden>
+      <div class="admin-header">
+        <span class="eyebrow" data-admin="dashboard"></span>
+        <h1 data-admin="editorTitle"></h1>
+        <p class="muted" data-admin="editorHint"></p>
+      </div>
+
+      <section class="form-card">
+        <h2 data-admin="identity"></h2>
+        <div id="profileFields"></div>
+      </section>
+
+      <section class="form-card">
+        <h2 data-admin="appearance"></h2>
+        <div class="grid-2">
+          <div class="form-group">
+            <label for="accentInput" data-admin="accent"></label>
+            <input class="field" type="color" id="accentInput">
+          </div>
+          <div class="form-group">
+            <label for="accent2Input" data-admin="accent2"></label>
+            <input class="field" type="color" id="accent2Input">
+          </div>
+        </div>
+      </section>
+
+      <section class="form-card">
+        <div class="space-between">
+          <h2 data-admin="skills"></h2>
+          <button class="btn btn-small" type="button" id="addSkill" data-admin="addSkill"></button>
+        </div>
+        <div id="adminSkills"></div>
+      </section>
+
+      <section class="form-card">
+        <div class="space-between">
+          <h2 data-admin="socials"></h2>
+          <button class="btn btn-small" type="button" id="addSocial" data-admin="addSocial"></button>
+        </div>
+        <div id="adminSocials"></div>
+      </section>
+
+      <section class="form-card">
+        <h2 id="projectFormHeading" data-admin="addProjectTitle"></h2>
+        <form id="projectForm">
+          <div id="projectFields"></div>
+          <div class="stack">
+            <button class="btn btn-primary btn-small" type="submit" id="projectSubmit"></button>
+            <button class="btn btn-small" type="button" id="projectCancel" data-admin="cancelEdit" hidden></button>
+          </div>
+        </form>
+
+        <h2 style="margin-top:30px" data-admin="projectList"></h2>
+        <div id="adminProjects"></div>
+      </section>
+
+      <section class="form-card">
+        <h2 data-admin="publicTexts"></h2>
+        <p class="hint" data-admin="publicTextsHint"></p>
+        <div id="copyFields"></div>
+      </section>
+
+      <section class="admin-tools">
+        <span id="saveState" class="muted" aria-live="polite"></span>
+        <div class="stack">
+          <button class="btn btn-small" type="button" id="previewButton" data-admin="preview"></button>
+          <button class="btn btn-small" type="button" id="exportButton" data-admin="export"></button>
+          <button class="btn btn-small" type="button" id="importButton" data-admin="import"></button>
+          <input id="importFile" type="file" accept=".json,application/json" hidden>
+          <button class="btn btn-small btn-danger" type="button" id="logoutButton" data-admin="logout"></button>
+          <button class="btn btn-primary" type="button" id="commitButton" data-admin="save"></button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <footer>© <span id="year"></span> <span id="footerText"></span></footer>
+
+  <script>
+    "use strict";
+
+    /* فقط این چهار مقدار را برای مخزن خودتان تنظیم کنید. */
+    const CONFIG = {
+      owner: "parsa7400",
+      repo: "   parsa7400.github.io",
+      branch: "main",
+      path: "portfolio.json"
+    };
+
+    const LANGS = ["fa", "en"];
+
+    /* متن‌های پیش‌فرض رابط عمومی؛ از داخل پنل قابل بازنویسی‌اند. */
+    const DEFAULT_COPY = {
+      fa: {
+        navAbout: "درباره من",
+        navSkills: "مهارت‌ها",
+        navProjects: "پروژه‌ها",
+        navContact: "ارتباط",
+        navAdmin: "⚙ پنل مدیریت",
+        hello: "سلام، من",
+        heroProjects: "مشاهده پروژه‌ها ↓",
+        heroContact: "تماس با من",
+        aboutKicker: "درباره",
+        aboutTitle: "داستان و تمرکز کاری من",
+        skillsKicker: "تخصص‌ها",
+        skillsTitle: "فناوری‌ها و مهارت‌ها",
+        skillsSubtitle: "ابزارها و فناوری‌هایی که با آن‌ها کار می‌کنم.",
+        projectsKicker: "نمونه‌کارها",
+        projectsTitle: "پروژه‌های انجام‌شده",
+        projectsSubtitle: "پروژه‌ها را جست‌وجو یا بر اساس دسته فیلتر کنید.",
+        searchPlaceholder: "جست‌وجو در نام، توضیح یا فناوری...",
+        allProjects: "همه پروژه‌ها",
+        noProjects: "پروژه‌ای مطابق جست‌وجو پیدا نشد.",
+        noDescription: "توضیحی برای این پروژه ثبت نشده است.",
+        demoLink: "مشاهده دمو ↗",
+        sourceLink: "مشاهده کد ↗",
+        contactKicker: "همکاری",
+        contactTitle: "پروژه‌ای در ذهن دارید؟",
+        contactSubtitle: "برای گفت‌وگو درباره ایده‌ها و همکاری در تماس باشید.",
+        emailLink: "ارسال ایمیل ↗"
+      },
+      en: {
+        navAbout: "About",
+        navSkills: "Skills",
+        navProjects: "Projects",
+        navContact: "Contact",
+        navAdmin: "⚙ Admin",
+        hello: "Hi, I'm",
+        heroProjects: "View projects ↓",
+        heroContact: "Contact me",
+        aboutKicker: "ABOUT",
+        aboutTitle: "What I do",
+        skillsKicker: "EXPERTISE",
+        skillsTitle: "Technologies and skills",
+        skillsSubtitle: "Tools and technologies I work with.",
+        projectsKicker: "PORTFOLIO",
+        projectsTitle: "Selected projects",
+        projectsSubtitle: "Search projects or filter by category.",
+        searchPlaceholder: "Search names, descriptions or technologies...",
+        allProjects: "All projects",
+        noProjects: "No projects match your search.",
+        noDescription: "No description has been added yet.",
+        demoLink: "Live demo ↗",
+        sourceLink: "Source code ↗",
+        contactKicker: "LET'S CONNECT",
+        contactTitle: "Have a project in mind?",
+        contactSubtitle: "Get in touch to discuss ideas and collaboration.",
+        emailLink: "Send email ↗"
+      }
+    };
+
+    const COPY_LABELS = {
+      navAbout: ["لینک درباره من", "About navigation"],
+      navSkills: ["لینک مهارت‌ها", "Skills navigation"],
+      navProjects: ["لینک پروژه‌ها", "Projects navigation"],
+      navContact: ["لینک ارتباط", "Contact navigation"],
+      navAdmin: ["لینک پنل مدیریت", "Admin navigation"],
+      hello: ["متن آغاز تیتر", "Hero greeting"],
+      heroProjects: ["دکمه پروژه‌ها", "Projects button"],
+      heroContact: ["دکمه تماس", "Contact button"],
+      aboutKicker: ["برچسب درباره", "About eyebrow"],
+      aboutTitle: ["تیتر درباره", "About heading"],
+      skillsKicker: ["برچسب مهارت‌ها", "Skills eyebrow"],
+      skillsTitle: ["تیتر مهارت‌ها", "Skills heading"],
+      skillsSubtitle: ["توضیح مهارت‌ها", "Skills subtitle"],
+      projectsKicker: ["برچسب پروژه‌ها", "Projects eyebrow"],
+      projectsTitle: ["تیتر پروژه‌ها", "Projects heading"],
+      projectsSubtitle: ["توضیح پروژه‌ها", "Projects subtitle"],
+      searchPlaceholder: ["متن جست‌وجو", "Search placeholder"],
+      allProjects: ["فیلتر همه", "All-projects filter"],
+      noProjects: ["پیام بدون نتیجه", "No-results message"],
+      noDescription: ["متن توضیح خالی", "Missing-description text"],
+      demoLink: ["دکمه دمو", "Demo button"],
+      sourceLink: ["دکمه سورس", "Source button"],
+      contactKicker: ["برچسب تماس", "Contact eyebrow"],
+      contactTitle: ["تیتر تماس", "Contact heading"],
+      contactSubtitle: ["توضیح تماس", "Contact subtitle"],
+      emailLink: ["دکمه ایمیل", "Email button"]
+    };
+
+    /* نوشته‌های خود پنل نیز با تغییر زبان عوض می‌شوند. */
+    const ADMIN = {
+      fa: {
+        secureAccess: "اتصال به مخزن",
+        loginTitle: "ورود به پنل مدیریت",
+        loginIntro: "توکن محدودشده به همین مخزن را وارد کنید. ذخیره‌سازی مستقیم با GitHub Contents API انجام می‌شود.",
+        securityNote: "پنل سمت کاربر مخفی یا محافظت‌شده با رمز سرور نیست. توکن فقط در حافظه همین تب نگه داشته می‌شود؛ به کد یا فایل JSON اضافه‌اش نکنید.",
+        loginButton: "بررسی و ورود",
+        cancel: "انصراف",
+        back: "← بازگشت به سایت",
+        backEditor: "← بازگشت به ویرایشگر",
+        dashboard: "داشبورد محتوا",
+        editorTitle: "مدیریت همه بخش‌های سایت",
+        editorHint: "تغییرات ابتدا در همین تب و پیش‌نمایش اعمال می‌شوند. برای انتشار، ذخیره نهایی را بزنید.",
+        identity: "هویت، معرفی و راه‌های ارتباط",
+        appearance: "رنگ‌بندی سایت",
+        accent: "رنگ اصلی",
+        accent2: "رنگ مکمل",
+        skills: "مهارت‌ها",
+        socials: "لینک‌های ارتباطی",
+        addSkill: "+ افزودن مهارت",
+        addSocial: "+ افزودن لینک",
+        addProjectTitle: "افزودن پروژه",
+        editProjectTitle: "ویرایش پروژه",
+        projectList: "پروژه‌های ثبت‌شده",
+        publicTexts: "نوشته‌های رابط عمومی",
+        publicTextsHint: "متن دکمه‌ها، تیترها، فیلترها و برچسب‌ها را برای هر دو زبان تغییر دهید.",
+        preview: "پیش‌نمایش سایت",
+        export: "خروجی JSON",
+        import: "ورود JSON",
+        logout: "خروج",
+        save: "🚀 ذخیره در GitHub",
+        saving: "در حال ذخیره...",
+        saved: "همه تغییرات ذخیره شده‌اند",
+        unsaved: "تغییرات ذخیره‌نشده دارید",
+        cancelEdit: "انصراف از ویرایش",
+        addToList: "افزودن پروژه",
+        updateItem: "ثبت ویرایش پروژه",
+        fa: "فارسی",
+        en: "English",
+        name: "نام",
+        role: "عنوان شغلی",
+        bio: "معرفی کوتاه",
+        about: "متن درباره من",
+        availability: "پیام وضعیت / دسترس‌پذیری",
+        footer: "متن پاورقی (سال خودکار اضافه می‌شود)",
+        tags: "برچسب‌های کارت پروفایل؛ هر خط یک برچسب",
+        email: "ایمیل عمومی",
+        avatarUrl: "لینک تصویر پروفایل (اختیاری)",
+        skillName: "نام مهارت",
+        level: "درصد تسلط",
+        socialName: "عنوان لینک",
+        socialUrl: "آدرس لینک",
+        projectName: "نام پروژه",
+        category: "دسته‌بندی",
+        language: "زبان‌ها و فناوری‌ها",
+        description: "توضیحات",
+        codeUrl: "لینک مخزن / کد",
+        demoUrl: "لینک دمو",
+        edit: "ویرایش",
+        delete: "حذف",
+        up: "بالا",
+        down: "پایین",
+        loginFailed: "ورود انجام نشد",
+        loading: "در حال دریافت اطلاعات...",
+        loginSuccess: "اطلاعات مخزن دریافت شد.",
+        added: "آیتم به فهرست موقت اضافه شد.",
+        savedSuccess: "تغییرات در مخزن ثبت شدند.",
+        badUrl: "یکی از لینک‌ها معتبر نیست؛ فقط http یا https وارد کنید.",
+        badEmail: "نشانی ایمیل معتبر نیست.",
+        missingName: "نام سایت را برای هر دو زبان وارد کنید.",
+        missingProject: "نام پروژه را برای هر دو زبان وارد کنید.",
+        conflict: "فایل روی GitHub پس از بارگذاری شما تغییر کرده است. ابتدا خروجی JSON بگیرید و سپس صفحه را تازه‌سازی کنید؛ تغییرات شخص دیگری بازنویسی نشد.",
+        confirmDelete: "این مورد حذف شود؟",
+        confirmImport: "اطلاعات فعلی پنل با فایل انتخاب‌شده جایگزین شود؟",
+        confirmLogout: "تغییرات ذخیره‌نشده از بین می‌روند. خارج می‌شوید؟",
+        imported: "فایل JSON در پنل بارگذاری شد؛ برای انتشار ذخیره کنید.",
+        invalidImport: "فایل JSON معتبر یا سازگار نیست.",
+        configMissing: "ابتدا owner و repo را در CONFIG تنظیم کنید.",
+        noFile: "هنوز portfolio.json منتشر نشده است؛ اکنون داده‌های پیش‌فرض نمایش داده می‌شوند.",
+        loadError: "بارگذاری portfolio.json ناموفق بود؛ داده‌های پیش‌فرض نمایش داده می‌شوند."
+      },
+      en: {
+        secureAccess: "REPOSITORY ACCESS",
+        loginTitle: "Sign in to the editor",
+        loginIntro: "Enter a token restricted to this repository. Changes are saved through GitHub's Contents API.",
+        securityNote: "This client-side page is not a server-protected login. The token stays in this tab's memory only. Never put it in source code or JSON.",
+        loginButton: "Verify and sign in",
+        cancel: "Cancel",
+        back: "← Back to site",
+        backEditor: "← Back to editor",
+        dashboard: "CONTENT DASHBOARD",
+        editorTitle: "Edit your entire website",
+        editorHint: "Changes appear in this tab's preview first. Publish with the final save button.",
+        identity: "Identity, introduction and contact",
+        appearance: "Site colors",
+        accent: "Primary color",
+        accent2: "Secondary color",
+        skills: "Skills",
+        socials: "Social and contact links",
+        addSkill: "+ Add skill",
+        addSocial: "+ Add link",
+        addProjectTitle: "Add project",
+        editProjectTitle: "Edit project",
+        projectList: "Saved projects",
+        publicTexts: "Public interface copy",
+        publicTextsHint: "Edit headings, buttons, filters and labels in both languages.",
+        preview: "Preview site",
+        export: "Export JSON",
+        import: "Import JSON",
+        logout: "Sign out",
+        save: "🚀 Save to GitHub",
+        saving: "Saving...",
+        saved: "All changes saved",
+        unsaved: "You have unsaved changes",
+        cancelEdit: "Cancel editing",
+        addToList: "Add project",
+        updateItem: "Update project",
+        fa: "فارسی",
+        en: "English",
+        name: "Name",
+        role: "Professional title",
+        bio: "Short biography",
+        about: "About text",
+        availability: "Availability / status message",
+        footer: "Footer text (year added automatically)",
+        tags: "Profile tags; one tag per line",
+        email: "Public email",
+        avatarUrl: "Profile image URL (optional)",
+        skillName: "Skill name",
+        level: "Proficiency percentage",
+        socialName: "Link title",
+        socialUrl: "Link URL",
+        projectName: "Project name",
+        category: "Category",
+        language: "Languages and technologies",
+        description: "Description",
+        codeUrl: "Repository / source URL",
+        demoUrl: "Demo URL",
+        edit: "Edit",
+        delete: "Delete",
+        up: "Up",
+        down: "Down",
+        loginFailed: "Could not sign in",
+        loading: "Loading repository content...",
+        loginSuccess: "Repository content loaded.",
+        added: "Item added to the local draft.",
+        savedSuccess: "Changes committed to the repository.",
+        badUrl: "An invalid URL was found; use http or https.",
+        badEmail: "Enter a valid email address.",
+        missingName: "Enter the site name in both languages.",
+        missingProject: "Enter the project name in both languages.",
+        conflict: "The GitHub file changed since you loaded it. Export your JSON, then reload the page; no one else's changes were overwritten.",
+        confirmDelete: "Delete this item?",
+        confirmImport: "Replace the current editor content with this JSON file?",
+        confirmLogout: "Unsaved changes will be lost. Sign out?",
+        imported: "JSON loaded into the editor. Save to publish.",
+        invalidImport: "The JSON file is invalid or incompatible.",
+        configMissing: "Set owner and repo in CONFIG first.",
+        noFile: "portfolio.json has not been published yet; showing default content.",
+        loadError: "Could not load portfolio.json; showing default content."
+      }
+    };
+
+    const INITIAL = {
+      name: { fa: "parsa7400", en: "parsa7400" },
+      role: {
+        fa: "توسعه‌دهنده نرم‌افزار و راهکارهای خودکار",
+        en: "Software developer and automation builder"
+      },
+      bio: {
+        fa: "علاقه‌مند به توسعه ابزارهای خودکار، بات‌ها و سیستم‌های سبک.",
+        en: "Interested in automation tools, bots and lightweight systems."
+      },
+      about: {
+        fa: "سلام! اینجا می‌توانید با مهارت‌ها و پروژه‌های من آشنا شوید.",
+        en: "Hello! Explore my skills and projects here."
+      },
+      availability: {
+        fa: "در دسترس برای پروژه‌های جدید",
+        en: "Available for new projects"
+      },
+      footer: {
+        fa: "parsa7400 — تمامی حقوق محفوظ است.",
+        en: "parsa7400 — All rights reserved."
+      },
+      tags: {
+        fa: ["Python", "بات‌ها", "SQLite", "وب"],
+        en: ["Python", "Bots", "SQLite", "Web"]
+      },
+      email: "",
+      avatarUrl: "",
+      theme: { accent: "#9061f9", accent2: "#20c997" },
+      skills: [
+        { id: "skill-python", name: { fa: "Python", en: "Python" }, level: 92 },
+        { id: "skill-sqlite", name: { fa: "SQLite / WAL", en: "SQLite / WAL" }, level: 88 },
+        { id: "skill-bots", name: { fa: "API بات‌ها", en: "Bot APIs" }, level: 95 }
+      ],
+      socials: [],
+      projects: [],
+      ui: { fa: {}, en: {} }
+    };
+
+    const $ = selector => document.querySelector(selector);
+    const clone = value => JSON.parse(JSON.stringify(value));
+    const text = value => typeof value === "string" ? value : String(value ?? "");
+    const localized = (value, fallback = "") => {
+      if (typeof value === "string") return { fa: value, en: value };
+      return {
+        fa: text(value?.fa ?? fallback),
+        en: text(value?.en ?? fallback)
+      };
+    };
+    const pick = value => text(value?.[currentLang] ?? value?.fa ?? "");
+    const adminText = key => ADMIN[currentLang][key] || key;
+    const copyText = key => text(currentData.ui?.[currentLang]?.[key] ?? DEFAULT_COPY[currentLang][key] ?? "");
+    const newId = () => typeof crypto !== "undefined" && crypto.randomUUID
+      ? crypto.randomUUID()
+      : "p_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+
+    function normalize(raw) {
+      if (!raw || typeof raw !== "object" || Array.isArray(raw)) throw new Error("Invalid JSON root");
+
+      const arr = value => Array.isArray(value) ? value : [];
+      const defaults = clone(INITIAL);
+      const data = {
+        name: localized(raw.name ?? defaults.name),
+        role: localized(raw.role ?? defaults.role),
+        bio: localized(raw.bio ?? defaults.bio),
+        about: localized(raw.about ?? defaults.about),
+        availability: localized(raw.availability ?? defaults.availability),
+        footer: localized(raw.footer ?? defaults.footer),
+        tags: {
+          fa: arr(raw.tags?.fa ?? defaults.tags.fa).map(text),
+          en: arr(raw.tags?.en ?? defaults.tags.en).map(text)
+        },
+        email: text(raw.email ?? defaults.email),
+        avatarUrl: text(raw.avatarUrl ?? defaults.avatarUrl),
+        theme: {
+          accent: text(raw.theme?.accent ?? defaults.theme.accent),
+          accent2: text(raw.theme?.accent2 ?? defaults.theme.accent2)
+        },
+        skills: arr(raw.skills ?? defaults.skills).filter(x => x && typeof x === "object").map(s => ({
+          id: text(s.id ?? newId()),
+          name: localized(s.name),
+          level: Number.isFinite(Number(s.level)) ? Math.max(0, Math.min(100, Number(s.level))) : 0
+        })),
+        socials: arr(raw.socials ?? defaults.socials).filter(x => x && typeof x === "object").map(s => ({
+          id: text(s.id ?? newId()),
+          name: localized(s.name),
+          url: text(s.url)
+        })),
+        projects: arr(raw.projects ?? defaults.projects).filter(x => x && typeof x === "object").map(p => ({
+          id: text(p.id ?? newId()),
+          name: localized(p.name),
+          category: localized(p.category),
+          language: localized(p.language),
+          description: localized(p.description),
+          url: text(p.url),
+          demo: text(p.demo)
+        })),
+        ui: {
+          fa: Object.fromEntries(Object.keys(DEFAULT_COPY.fa).map(k => [k, text(raw.ui?.fa?.[k] ?? DEFAULT_COPY.fa[k])])),
+          en: Object.fromEntries(Object.keys(DEFAULT_COPY.en).map(k => [k, text(raw.ui?.en?.[k] ?? DEFAULT_COPY.en[k])]))
+        }
+      };
+      return data;
+    }
+
+    let currentLang = "fa";
+    let currentData = normalize(INITIAL);
+    let savedData = clone(currentData);
+    let memoryToken = "";
+    let fileSha = null;
+    let dirty = false;
+    let activeCategory = "";
+    let editingProjectId = null;
+    let projectDraftDirty = false;
+    let previewing = false;
+    let busy = false;
+    let toastTimer;
+
+    function make(tag, className = "", content = "") {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      node.textContent = content;
+      return node;
+    }
+
+    function notify(message) {
+      const toast = $("#toast");
+      toast.textContent = message;
+      toast.hidden = false;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { toast.hidden = true; }, 4300);
+    }
+
+    function validHttpUrl(value) {
+      if (!value) return "";
+      try {
+        const url = new URL(value);
+        return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+      } catch {
+        return "";
+      }
+    }
+
+    function addLink(container, label, href, primary = false) {
+      const url = validHttpUrl(href);
+      if (!url) return;
+      const link = make("a", "btn btn-small" + (primary ? " btn-primary" : ""), label);
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      container.append(link);
+    }
+
+    function markDirty() {
+      dirty = true;
+      $("#saveState").textContent = adminText("unsaved");
+      renderPublic();
+    }
+
+    function renderPublic() {
+      const name = pick(currentData.name);
+      const role = pick(currentData.role);
+
+      document.title = name + " | " + role;
+      $("#pageDescription").content = pick(currentData.bio);
+      $("#navName").textContent = name;
+      $("#heroName").textContent = name;
+      $("#heroRole").textContent = role;
+      $("#cardName").textContent = name;
+      $("#cardRole").textContent = role;
+      $("#shortBio").textContent = pick(currentData.bio);
+      $("#aboutText").textContent = pick(currentData.about);
+      $("#availabilityText").textContent = pick(currentData.availability);
+      $("#availabilityBox").hidden = !pick(currentData.availability).trim();
+      $("#footerText").textContent = pick(currentData.footer);
+
+      for (const node of document.querySelectorAll("[data-copy]")) {
+        node.textContent = copyText(node.dataset.copy);
+      }
+      $("#searchBox").placeholder = copyText("searchPlaceholder");
+
+      const imageUrl = validHttpUrl(currentData.avatarUrl);
+      $("#avatarImage").hidden = !imageUrl;
+      $("#avatarFallback").hidden = !!imageUrl;
+      if (imageUrl) $("#avatarImage").src = imageUrl;
+      else $("#avatarImage").removeAttribute("src");
+      $("#avatarFallback").textContent = name.trim().charAt(0).toUpperCase() || "P";
+      $("#avatarImage").alt = name;
+
+      document.documentElement.style.setProperty(
+        "--accent", /^#[0-9a-f]{6}$/i.test(currentData.theme.accent) ? currentData.theme.accent : INITIAL.theme.accent
+      );
+      document.documentElement.style.setProperty(
+        "--accent-2", /^#[0-9a-f]{6}$/i.test(currentData.theme.accent2) ? currentData.theme.accent2 : INITIAL.theme.accent2
+      );
+
+      const tags = $("#quickTags");
+      tags.replaceChildren();
+      (currentData.tags[currentLang] || []).filter(Boolean).forEach(tag => tags.append(make("span", "pill", tag)));
+
+      const skills = $("#skillsList");
+      skills.replaceChildren();
+      currentData.skills.forEach(skill => {
+        const card = make("div", "skill");
+        const title = make("div", "skill-title");
+        title.append(make("span", "", pick(skill.name)));
+        title.append(make("b", "", Math.round(skill.level) + "%"));
+        const meter = make("div", "meter");
+        const fill = make("span");
+        fill.style.width = Math.max(0, Math.min(100, skill.level)) + "%";
+        meter.append(fill);
+        card.append(title, meter);
+        skills.append(card);
+      });
+
+      const contact = $("#contactLinks");
+      contact.replaceChildren();
+      if (currentData.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(currentData.email)) {
+        const email = make("a", "btn btn-primary", copyText("emailLink"));
+        email.href = "mailto:" + currentData.email;
+        contact.append(email);
+      }
+      currentData.socials.forEach(s => addLink(contact, pick(s.name), s.url));
+
+      renderCategories();
+      renderProjects();
+    }
+
+    function renderCategories() {
+      const box = $("#categoryChips");
+      box.replaceChildren();
+
+      const available = [...new Set(currentData.projects.map(p => pick(p.category).trim()).filter(Boolean))];
+      if (activeCategory && !available.includes(activeCategory)) activeCategory = "";
+
+      function chip(label, value) {
+        const button = make("button", "chip" + (activeCategory === value ? " active" : ""), label);
+        button.type = "button";
+        button.setAttribute("aria-pressed", String(activeCategory === value));
+        button.addEventListener("click", () => {
+          activeCategory = value;
+          renderCategories();
+          renderProjects();
+        });
+        box.append(button);
+      }
+
+      chip(copyText("allProjects"), "");
+      available.forEach(category => chip(category, category));
+    }
+
+    function renderProjects() {
+      const box = $("#projectsList");
+      box.replaceChildren();
+      const query = $("#searchBox").value.trim().toLocaleLowerCase();
+
+      const filtered = currentData.projects.filter(project => {
+        const category = pick(project.category).trim();
+        const matchesCategory = !activeCategory || category === activeCategory;
+        const searchable = [
+          project.name.fa, project.name.en,
+          project.category.fa, project.category.en,
+          project.language.fa, project.language.en,
+          project.description.fa, project.description.en
+        ].join(" ").toLocaleLowerCase();
+        return matchesCategory && (!query || searchable.includes(query));
+      });
+
+      if (!filtered.length) {
+        box.append(make("p", "empty", copyText("noProjects")));
+        return;
+      }
+
+      filtered.forEach(project => {
+        const card = make("article", "project-card");
+        const header = make("div", "project-head");
+        header.append(make("h3", "", pick(project.name)));
+        if (pick(project.category)) header.append(make("span", "pill", pick(project.category)));
+
+        card.append(header);
+        card.append(make("p", "", pick(project.description) || copyText("noDescription")));
+        if (pick(project.language)) card.append(make("div", "tech", "⚡ " + pick(project.language)));
+
+        const links = make("div", "stack project-links");
+        addLink(links, copyText("demoLink"), project.demo, true);
+        addLink(links, copyText("sourceLink"), project.url);
+        if (links.childElementCount) card.append(links);
+        box.append(card);
+      });
+    }
+
+    function applyLanguage() {
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "fa" ? "rtl" : "ltr";
+      $("#langToggle").textContent = currentLang === "fa" ? "English" : "فارسی";
+
+      document.querySelectorAll("[data-admin]").forEach(node => {
+        node.textContent = adminText(node.dataset.admin);
+      });
+      $("#backToSite").textContent = adminText("back");
+      $("#backToEditor").textContent = adminText("backEditor");
+      $("#saveState").textContent = adminText(dirty ? "unsaved" : "saved");
+      renderPublic();
+
+      if (!$("#editorPanel").hidden) {
+        renderProfileFields();
+        renderSkillEditor();
+        renderSocialEditor();
+        renderProjectEditorList();
+        renderCopyFields();
+        renderProjectFormFields();
+      }
+    }
+
+    function field(labelText, value, options = {}) {
+      const wrap = make("div", "form-group");
+      const label = make("label", "", labelText);
+      const input = make(options.multiline ? "textarea" : "input", "field", "");
+      if (!options.multiline) input.type = options.type || "text";
+      if (options.ltr) input.classList.add("ltr");
+      input.value = value ?? "";
+      if (options.required) input.required = true;
+      if (options.placeholder) input.placeholder = options.placeholder;
+      if (options.min != null) input.min = options.min;
+      if (options.max != null) input.max = options.max;
+      label.append(input);
+      wrap.append(label);
+      return { wrap, input };
+    }
+
+    function bilingualFields(container, key, value, options = {}) {
+      const grid = make("div", "grid-2");
+      LANGS.forEach(lang => {
+        const title = adminText(key) + " — " + adminText(lang);
+        const control = field(title, value?.[lang] ?? "", {
+          ...options, ltr: lang === "en"
+        });
+        control.input.dataset.field = key;
+        control.input.dataset.lang = lang;
+        grid.append(control.wrap);
+      });
+      container.append(grid);
+    }
+
+    function renderProfileFields() {
+      const box = $("#profileFields");
+      box.replaceChildren();
+      for (const key of ["name", "role", "availability", "bio", "about", "footer"]) {
+        bilingualFields(box, key, currentData[key], { multiline: ["bio", "about"].includes(key) });
+      }
+
+      const tags = {
+        fa: currentData.tags.fa.join("\n"),
+        en: currentData.tags.en.join("\n")
+      };
+      bilingualFields(box, "tags", tags, { multiline: true });
+
+      const grid = make("div", "grid-2");
+      for (const [key, type] of [["email", "email"], ["avatarUrl", "url"]]) {
+        const item = field(adminText(key), currentData[key], { type, ltr: true });
+        item.input.dataset.field = key;
+        grid.append(item.wrap);
+      }
+      box.append(grid);
+
+      $("#accentInput").value = /^#[0-9a-f]{6}$/i.test(currentData.theme.accent)
+        ? currentData.theme.accent : INITIAL.theme.accent;
+      $("#accent2Input").value = /^#[0-9a-f]{6}$/i.test(currentData.theme.accent2)
+        ? currentData.theme.accent2 : INITIAL.theme.accent2;
+    }
+
+    function actionButton(action, label, id, style = "") {
+      const button = make("button", "btn btn-small " + style, label);
+      button.type = "button";
+      button.dataset.action = action;
+      button.dataset.id = id;
+      return button;
+    }
+
+    function renderSkillEditor() {
+      const box = $("#adminSkills");
+      box.replaceChildren();
+
+      currentData.skills.forEach(skill => {
+        const row = make("div", "editor-row");
+        const inputs = make("div", "row-fields");
+
+        LANGS.forEach(lang => {
+          const item = field(adminText("skillName") + " — " + adminText(lang), skill.name[lang]);
+          item.input.dataset.id = skill.id;
+          item.input.dataset.key = "name";
+          item.input.dataset.lang = lang;
+          inputs.append(item.wrap);
+        });
+
+        const level = field(adminText("level"), skill.level, { type: "number", min: 0, max: 100 });
+        level.input.dataset.id = skill.id;
+        level.input.dataset.key = "level";
+        inputs.append(level.wrap);
+        row.append(inputs);
+
+        const actions = make("div", "row-actions");
+        actions.append(
+          actionButton("up", adminText("up"), skill.id),
+          actionButton("down", adminText("down"), skill.id),
+          actionButton("delete", adminText("delete"), skill.id, "btn-danger")
+        );
+        row.append(actions);
+        box.append(row);
+      });
+    }
+
+    function renderSocialEditor() {
+      const box = $("#adminSocials");
+      box.replaceChildren();
+
+      currentData.socials.forEach(social => {
+        const row = make("div", "editor-row");
+        const inputs = make("div", "row-fields");
+
+        LANGS.forEach(lang => {
+          const item = field(adminText("socialName") + " — " + adminText(lang), social.name[lang]);
+          item.input.dataset.id = social.id;
+          item.input.dataset.key = "name";
+          item.input.dataset.lang = lang;
+          inputs.append(item.wrap);
+        });
+
+        const link = field(adminText("socialUrl"), social.url, { type: "url", ltr: true });
+        link.input.dataset.id = social.id;
+        link.input.dataset.key = "url";
+        inputs.append(link.wrap);
+        row.append(inputs);
+
+        const actions = make("div", "row-actions");
+        actions.append(
+          actionButton("up", adminText("up"), social.id),
+          actionButton("down", adminText("down"), social.id),
+          actionButton("delete", adminText("delete"), social.id, "btn-danger")
+        );
+        row.append(actions);
+        box.append(row);
+      });
+    }
+
+    function renderProjectEditorList() {
+      const box = $("#adminProjects");
+      box.replaceChildren();
+
+      currentData.projects.forEach(project => {
+        const row = make("div", "editor-row space-between");
+        const description = make("div");
+        description.append(make("span", "list-title", pick(project.name) || "—"));
+        description.append(make("div", "hint", pick(project.category)));
+        row.append(description);
+
+        const actions = make("div", "stack");
+        actions.append(
+          actionButton("edit", adminText("edit"), project.id),
+          actionButton("up", adminText("up"), project.id),
+          actionButton("down", adminText("down"), project.id),
+          actionButton("delete", adminText("delete"), project.id, "btn-danger")
+        );
+        row.append(actions);
+        box.append(row);
+      });
+    }
+
+    function renderCopyFields() {
+      const box = $("#copyFields");
+      box.replaceChildren();
+
+      Object.keys(COPY_LABELS).forEach(key => {
+        const grid = make("div", "grid-2");
+        LANGS.forEach(lang => {
+          const label = COPY_LABELS[key][lang === "fa" ? 0 : 1] + " — " + adminText(lang);
+          const item = field(label, currentData.ui[lang][key], { ltr: lang === "en" });
+          item.input.dataset.copyKey = key;
+          item.input.dataset.lang = lang;
+          grid.append(item.wrap);
+        });
+        box.append(grid);
+      });
+    }
+
+    function renderProjectFormFields() {
+      const box = $("#projectFields");
+      box.replaceChildren();
+      const project = currentData.projects.find(p => p.id === editingProjectId);
+
+      for (const key of ["name", "category", "language", "description"]) {
+        bilingualFields(box, key === "name" ? "projectName" : key,
+          project?.[key] || { fa: "", en: "" },
+          { multiline: key === "description" });
+      }
+
+      const links = make("div", "grid-2");
+      for (const [key, title] of [["url", "codeUrl"], ["demo", "demoUrl"]]) {
+        const item = field(adminText(title), project?.[key] || "", { type: "url", ltr: true });
+        item.input.dataset.field = key;
+        links.append(item.wrap);
+      }
+      box.append(links);
+
+      $("#projectFormHeading").textContent = adminText(project ? "editProjectTitle" : "addProjectTitle");
+      $("#projectSubmit").textContent = adminText(project ? "updateItem" : "addToList");
+      $("#projectCancel").hidden = !project;
+    }
+
+    function resetProjectForm() {
+      editingProjectId = null;
+      projectDraftDirty = false;
+      renderProjectFormFields();
+    }
+
+    function flushProjectDraft() {
+      if (!projectDraftDirty) return true;
+      const form = $("#projectForm");
+      if (!form.reportValidity()) return false;
+
+      const read = (key, lang) =>
+        [...form.querySelectorAll("[data-field]")].find(input =>
+          input.dataset.field === key && (lang ? input.dataset.lang === lang : !input.dataset.lang)
+        )?.value.trim() ?? "";
+
+      const name = { fa: read("name", "fa"), en: read("name", "en") };
+      if (!name.fa || !name.en) {
+        notify(adminText("missingProject"));
+        return false;
+      }
+
+      const url = read("url");
+      const demo = read("demo");
+      if ((url && !validHttpUrl(url)) || (demo && !validHttpUrl(demo))) {
+        notify(adminText("badUrl"));
+        return false;
+      }
+
+      const payload = {
+        id: editingProjectId || newId(),
+        name,
+        category: { fa: read("category", "fa"), en: read("category", "en") },
+        language: { fa: read("language", "fa"), en: read("language", "en") },
+        description: { fa: read("description", "fa"), en: read("description", "en") },
+        url,
+        demo
+      };
+
+      if (editingProjectId) {
+        const index = currentData.projects.findIndex(p => p.id === editingProjectId);
+        if (index < 0) return false;
+        currentData.projects[index] = payload;
+      } else {
+        currentData.projects.unshift(payload);
+      }
+
+      resetProjectForm();
+      renderProjectEditorList();
+      markDirty();
+      notify(adminText("added"));
+      return true;
+    }
+
+    function moveItem(list, id, delta) {
+      const index = list.findIndex(item => item.id === id);
+      const target = index + delta;
+      if (index < 0 || target < 0 || target >= list.length) return false;
+      [list[index], list[target]] = [list[target], list[index]];
+      return true;
+    }
+
+    function bindListEditor(containerSelector, listName, render) {
+      const box = $(containerSelector);
+      box.addEventListener("input", event => {
+        const input = event.target.closest("[data-id][data-key]");
+        if (!input) return;
+        const item = currentData[listName].find(x => x.id === input.dataset.id);
+        if (!item) return;
+
+        if (input.dataset.key === "name") item.name[input.dataset.lang] = input.value;
+        else if (input.dataset.key === "level") {
+          const n = Number(input.value);
+          item.level = Number.isFinite(n) ? Math.max(0, Math.min(100, n)) : 0;
+        } else item[input.dataset.key] = input.value;
+        markDirty();
+      });
+
+      box.addEventListener("click", event => {
+        const button = event.target.closest("button[data-action]");
+        if (!button) return;
+        const { action, id } = button.dataset;
+        const list = currentData[listName];
+
+        if (action === "delete") {
+          if (!confirm(adminText("confirmDelete"))) return;
+          const index = list.findIndex(x => x.id === id);
+          if (index < 0) return;
+          list.splice(index, 1);
+        } else if (action === "up" || action === "down") {
+          if (!moveItem(list, id, action === "up" ? -1 : 1)) return;
+        } else return;
+
+        render();
+        markDirty();
+      });
+    }
+
+    /* اتصال به GitHub: توکن هرگز در localStorage یا فایل ذخیره نمی‌شود. */
+    function apiBase() {
+      const owner = encodeURIComponent(CONFIG.owner.trim());
+      const repo = encodeURIComponent(CONFIG.repo.trim());
+      return `https://api.github.com/repos/${owner}/${repo}`;
+    }
+
+    function contentsEndpoint() {
+      const path = CONFIG.path.split("/").map(encodeURIComponent).join("/");
+      return `/contents/${path}`;
+    }
+
+    async function github(endpoint, options = {}) {
+      const headers = {
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        ...(options.headers || {})
+      };
+      if (memoryToken) headers.Authorization = `Bearer ${memoryToken}`;
+
+      const response = await fetch(apiBase() + endpoint, {
+        ...options, headers, cache: "no-store"
+      });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        const error = new Error(body.message || `GitHub HTTP ${response.status}`);
+        error.status = response.status;
+        throw error;
+      }
+      return body;
+    }
+
+    function decodeBase64Utf8(value) {
+      const binary = atob(value.replace(/\s/g, ""));
+      const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
+      return new TextDecoder().decode(bytes);
+    }
+
+    function encodeBase64Utf8(value) {
+      const bytes = new TextEncoder().encode(value);
+      let binary = "";
+      for (let i = 0; i < bytes.length; i += 8192) {
+        binary += String.fromCharCode(...bytes.subarray(i, i + 8192));
+      }
+      return btoa(binary);
+    }
+
+    async function readRemoteFile() {
+      try {
+        const remote = await github(
+          contentsEndpoint() + "?ref=" + encodeURIComponent(CONFIG.branch)
+        );
+        if (remote.type !== "file" || !remote.content || !remote.sha) {
+          throw new Error("GitHub file content is unavailable or too large.");
+        }
+        return remote;
+      } catch (error) {
+        if (error.status === 404) return null;
+        throw error;
+      }
+    }
+
+    function validateBeforeSave() {
+      if (!currentData.name.fa.trim() || !currentData.name.en.trim()) {
+        notify(adminText("missingName"));
+        return false;
+      }
+      const email = currentData.email.trim();
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        notify(adminText("badEmail"));
+        return false;
+      }
+      const links = [
+        currentData.avatarUrl,
+        ...currentData.socials.map(x => x.url),
+        ...currentData.projects.flatMap(x => [x.url, x.demo])
+      ];
+      if (links.some(url => url.trim() && !validHttpUrl(url.trim()))) {
+        notify(adminText("badUrl"));
+        return false;
+      }
+      if (currentData.projects.some(p => !p.name.fa.trim() || !p.name.en.trim())) {
+        notify(adminText("missingProject"));
+        return false;
+      }
+      if (currentData.skills.some(s => s.level < 0 || s.level > 100)) {
+        notify(adminText("level") + ": 0–100");
+        return false;
+      }
+      return true;
+    }
+
+    function showPreview(enabled) {
+      previewing = enabled;
+      $("#siteView").hidden = !enabled;
+      $("#adminView").hidden = enabled;
+      $("#publicNav").hidden = true;
+      $("#adminNav").hidden = false;
+      $("#backToEditor").hidden = !enabled;
+      $("#backToSite").hidden = enabled;
+      if (enabled) renderPublic();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    $("#langToggle").addEventListener("click", () => {
+      currentLang = currentLang === "fa" ? "en" : "fa";
+      applyLanguage();
+    });
+
+    $("#searchBox").addEventListener("input", renderProjects);
+
+    $("#loginForm").addEventListener("submit", async event => {
+      event.preventDefault();
+      if (!CONFIG.owner || !CONFIG.repo ||
+          CONFIG.owner.startsWith("YOUR_") || CONFIG.repo.startsWith("YOUR_")) {
+        notify(adminText("configMissing"));
+        return;
+      }
+
+      const token = $("#patInput").value.trim();
+      if (!token) return;
+
+      const button = $("#loginButton");
+      button.disabled = true;
+      button.textContent = adminText("loading");
+
+      try {
+        memoryToken = token;
+        await github("");
+        await github("/branches/" + encodeURIComponent(CONFIG.branch));
+        const remote = await readRemoteFile();
+
+        currentData = remote
+          ? normalize(JSON.parse(decodeBase64Utf8(remote.content)))
+          : normalize(INITIAL);
+        fileSha = remote?.sha ?? null;
+        savedData = clone(currentData);
+        dirty = false;
+
+        $("#patInput").value = "";
+        $("#loginPanel").hidden = true;
+        $("#editorPanel").hidden = false;
+        applyLanguage();
+        notify(adminText("loginSuccess"));
+      } catch (error) {
+        memoryToken = "";
+        $("#patInput").value = "";
+        notify(adminText("loginFailed") + ": " + error.message);
+      } finally {
+        button.disabled = false;
+        button.textContent = adminText("loginButton");
+      }
+    });
+
+    $("#profileFields").addEventListener("input", event => {
+      const input = event.target.closest("[data-field]");
+      if (!input) return;
+      const { field: key, lang } = input.dataset;
+
+      if (key === "tags") currentData.tags[lang] = input.value.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+      else if (lang) currentData[key][lang] = input.value;
+      else currentData[key] = input.value;
+
+      markDirty();
+    });
+
+    for (const [selector, key] of [["#accentInput", "accent"], ["#accent2Input", "accent2"]]) {
+      $(selector).addEventListener("input", event => {
+        currentData.theme[key] = event.target.value;
+        markDirty();
+      });
+    }
+
+    bindListEditor("#adminSkills", "skills", renderSkillEditor);
+    bindListEditor("#adminSocials", "socials", renderSocialEditor);
+
+    $("#addSkill").addEventListener("click", () => {
+      currentData.skills.push({ id: newId(), name: { fa: "", en: "" }, level: 50 });
+      renderSkillEditor();
+      markDirty();
+    });
+
+    $("#addSocial").addEventListener("click", () => {
+      currentData.socials.push({ id: newId(), name: { fa: "", en: "" }, url: "" });
+      renderSocialEditor();
+      markDirty();
+    });
+
+    $("#adminProjects").addEventListener("click", event => {
+      const button = event.target.closest("button[data-action]");
+      if (!button) return;
+      const { action, id } = button.dataset;
+
+      if (action === "edit") {
+        if (projectDraftDirty && !flushProjectDraft()) return;
+        editingProjectId = id;
+        projectDraftDirty = false;
+        renderProjectFormFields();
+        $("#projectFormHeading").scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+
+      if (action === "delete") {
+        if (!confirm(adminText("confirmDelete"))) return;
+        currentData.projects = currentData.projects.filter(p => p.id !== id);
+        if (editingProjectId === id) resetProjectForm();
+      } else if (action === "up" || action === "down") {
+        if (!moveItem(currentData.projects, id, action === "up" ? -1 : 1)) return;
+      } else return;
+
+      renderProjectEditorList();
+      markDirty();
+    });
+
+    $("#projectForm").addEventListener("input", () => { projectDraftDirty = true; });
+    $("#projectForm").addEventListener("submit", event => {
+      event.preventDefault();
+      flushProjectDraft();
+    });
+    $("#projectCancel").addEventListener("click", resetProjectForm);
+
+    $("#copyFields").addEventListener("input", event => {
+      const input = event.target.closest("[data-copy-key]");
+      if (!input) return;
+      currentData.ui[input.dataset.lang][input.dataset.copyKey] = input.value;
+      markDirty();
+    });
+
+    $("#previewButton").addEventListener("click", () => {
+      if (projectDraftDirty && !flushProjectDraft()) return;
+      showPreview(true);
+    });
+    $("#backToEditor").addEventListener("click", () => showPreview(false));
+
+    $("#exportButton").addEventListener("click", () => {
+      if (projectDraftDirty && !flushProjectDraft()) return;
+      const blob = new Blob([JSON.stringify(currentData, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = make("a");
+      link.href = url;
+      link.download = "portfolio_backup.json";
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 30000);
+    });
+
+    $("#importButton").addEventListener("click", () => $("#importFile").click());
+    $("#importFile").addEventListener("change", async event => {
+      const file = event.target.files?.[0];
+      event.target.value = "";
+      if (!file || !confirm(adminText("confirmImport"))) return;
+
+      try {
+        if (file.size > 1_000_000) throw new Error("File too large");
+        const parsed = JSON.parse(await file.text());
+        if (!parsed.name || !Array.isArray(parsed.projects) || !Array.isArray(parsed.skills)) {
+          throw new Error("Missing required portfolio fields");
+        }
+        currentData = normalize(parsed);
+        activeCategory = "";
+        editingProjectId = null;
+        projectDraftDirty = false;
+        applyLanguage();
+        markDirty();
+        notify(adminText("imported"));
+      } catch {
+        notify(adminText("invalidImport"));
+      }
+    });
+
+    $("#commitButton").addEventListener("click", async () => {
+      if (busy || !memoryToken) return;
+      if (projectDraftDirty && !flushProjectDraft()) return;
+      if (!validateBeforeSave()) return;
+      if (!dirty) {
+        notify(adminText("saved"));
+        return;
+      }
+
+      busy = true;
+      const button = $("#commitButton");
+      button.disabled = true;
+      button.textContent = adminText("saving");
+
+      try {
+        /* به‌روزرسانی خاموش SHA ممنوع: تعارض را به کاربر اعلام می‌کنیم. */
+        const latest = await readRemoteFile();
+        if ((latest?.sha ?? null) !== fileSha) {
+          const conflict = new Error(adminText("conflict"));
+          conflict.conflict = true;
+          throw conflict;
+        }
+
+        const payload = {
+          message: "Update bilingual portfolio via admin panel",
+          content: encodeBase64Utf8(JSON.stringify(currentData, null, 2)),
+          branch: CONFIG.branch
+        };
+        if (fileSha) payload.sha = fileSha;
+
+        const result = await github(contentsEndpoint(), {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        fileSha = result.content.sha;
+        savedData = clone(currentData);
+        dirty = false;
+        $("#saveState").textContent = adminText("saved");
+        notify(adminText("savedSuccess"));
+      } catch (error) {
+        if (error.conflict || [409, 422].includes(error.status)) {
+          notify(adminText("conflict"));
+        } else {
+          notify(error.message);
+        }
+      } finally {
+        busy = false;
+        button.disabled = false;
+        button.textContent = adminText("save");
+      }
+    });
+
+    $("#logoutButton").addEventListener("click", () => {
+      if ((dirty || projectDraftDirty) && !confirm(adminText("confirmLogout"))) return;
+      memoryToken = "";
+      fileSha = null;
+      currentData = clone(savedData);
+      dirty = false;
+      editingProjectId = null;
+      projectDraftDirty = false;
+      $("#patInput").value = "";
+      $("#editorPanel").hidden = true;
+      $("#loginPanel").hidden = false;
+      applyLanguage();
+      window.scrollTo(0, 0);
+    });
+
+    window.addEventListener("beforeunload", event => {
+      if (!dirty && !projectDraftDirty) return;
+      event.preventDefault();
+      event.returnValue = "";
+    });
+
+    /* راه‌اندازی سایت؛ نمایش عمومی نیازی به توکن ندارد. */
+    (async function init() {
+      $("#year").textContent = new Date().getFullYear();
+      const isAdmin = new URLSearchParams(location.search).has("admin");
+
+      if (isAdmin) {
+        $("#siteView").hidden = true;
+        $("#publicNav").hidden = true;
+        $("#adminNav").hidden = false;
+        $("#adminView").hidden = false;
+        applyLanguage();
+        return;
+      }
+
+      try {
+        const response = await fetch("./" + CONFIG.path, { cache: "no-store" });
+        if (response.ok) {
+          currentData = normalize(await response.json());
+        } else if (response.status === 404) {
+          $("#siteWarning").hidden = false;
+          $("#siteWarning").textContent = adminText("noFile");
+        } else {
+          throw new Error("HTTP " + response.status);
+        }
+      } catch {
+        $("#siteWarning").hidden = false;
+        $("#siteWarning").textContent = adminText("loadError");
+      }
+
+      applyLanguage();
+    })();
+  </script>
+</body>
+</html>
